@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>Categories | My New Hugo Site</title>
+     <link rel="stylesheet" type="text/css" href="/fibers/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/fibers/css/fonts.css" />
+
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/fibers/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/fibers/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/fibers/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/fibers/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/fibers/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/fibers/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/fibers/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/fibers/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/fibers/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/fibers/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/fibers/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/fibers/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/fibers/favicon-16x16.png">
+<link rel="manifest" href="/fibers/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/fibers/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="alternate" type="application/rss+xml" href="https://phenocare.github.com/fibers/categories/index.xml" title="My New Hugo Site" />
+
+  </head>
+
+  <body>
+        
+
+
+<style>
+	#search-form {
+		display: block;
+		position: fixed;
+		top: 4px;
+		right: 60%;
+		margin: 0;
+		padding: 0;
+		min-width: 20rem;
+		max-width: 20rem;
+		max-height: 100vh;
+		z-index: 1000;
+	}
+
+	#search-form.search--display,
+	#search-form[data-focus='false'] .search--display {
+		display: none;
+	}
+
+	#search-form[data-focus='true'] .search--display {
+		display: block;
+	}
+
+	#search-form .search-bar {
+		display: flex;
+		height: 1.4rem;
+		align-items: center;
+	}
+
+	#search-form .search-bar {
+		background: rgb(var(--page-color, '240,240,240'));
+		color: rgb(var(--text-color, '3,3,3'));
+	}
+
+	#search-form[data-focus='true'] .search-bar {
+        border: 2px solid black;
+	}
+
+	#search-form[data-focus='true'] .search-bar:not(:focus-within) {
+		background: rgb(var(--text-color, '3,3,3'));
+		color: rgb(var(--page-color, '240,240,240'));
+		border-color: rgb(var(--text-color, '3,3,3'));
+	}
+
+	#search-input {
+		display: block;
+		padding: 0.3rem;
+		width: 15rem;
+		max-width: 100vw;
+		height: 100%;
+
+		background: inherit;
+		border: none;
+		color: inherit;
+		outline: none;
+		text-align: left;
+
+		font-size: var(--s-2, 0.8rem);
+	}
+
+	#search-submit {
+		display: none;
+		padding: 0;
+        margin: 10px;
+		background: inherit;
+		color: inherit;
+	}
+
+	#search-submit:hover,
+	#search-submit:focus {
+		color: rgb(var(--accent-color, '0,0,255'));
+	}
+
+	#search-results {
+		display: block;
+		flex-grow: 2;
+		margin: 0.5px 0 0 0;
+		padding: 0;
+		max-height: calc(100vh - 1.4rem - 0.5px);
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+
+        background-color: black;
+		border: 2.5px solid;
+		color: rgb(var(--text-color, '3,3,3'));
+		font-size: var(--s-2, 0.8rem);
+
+		scrollbar-color: rgb(var(--text-color, '3,3,3')) rgb(var(--page-color, '240,240,240')) !important;
+		scrollbar-width: thin !important;
+	}
+
+	#search-results:empty {
+		display: none;
+		opacity: 0;
+	}
+
+	#search-results li {
+		margin: 0;
+		width: 100%;
+
+		background-color: rgba(var(--page-color, '240,240,240'), var(--page-color-transparency, 0.89));
+		border-top: 0.5px dashed;
+		list-style: none;
+	}
+		#search-results li:first-child {
+			border: none;
+		}
+
+	#search-results a {
+		display: block;
+		padding: 0.3rem;
+		display: block;
+
+		text-decoration: none;
+	}
+
+	#search-results a:hover,
+	#search-results a:focus {
+		background: rgb(var(--text-color, '3,3,3'));
+		color: rgb(var(--page-color, '240,240,240'));
+		outline: 0;
+	}
+
+	#search-results a:active {
+		background: rgb(var(--accent-color, '0,0,255'));
+		color: rgb(var(--page-color, '240,240,240'));
+	}
+
+	#search-results li span:empty {
+		display: none;
+	}
+
+	#search-results li span:not(:last-child)::after {
+		content: ' – ';
+	}
+
+	#search-results li .title {
+		display: block;
+		margin-bottom: calc(var(--line-height, 1.4em)/3);
+	}
+
+	#search-results li .title::after {
+		display: none;
+	}
+</style>
+
+<form id="search-form" class="noscript" method="GET" action="https://duckduckgo.com/" data-language-prefix="">
+	<div class="search-bar">
+		<input id="search-input" class="search--display" name="q" tabindex="0" autocomplete="off" value="" placeholder="">
+		<input id="search-submit" type="submit" tabindex="-1" value="search">
+	</div>
+	<ul id="search-results" class="search--display"></ul>
+</form>
+
+<script src="/js/fixedsearch.js"></script>
+
+
+        
+        <nav>
+          <ul class="menu">
+            
+          </ul>
+        </nav>
+        
+
+        
+        
+
+
+<h1>Categories</h1>
+
+<ul class="terms">
+  
+</ul>
+
+  <br>
+
+  <footer>
+  
+<script defer>
+  document.addEventListener("keydown", function (e) {
+    if (document.activeElement.isContentEditable) {
+        return false;
+    }
+    if (document.activeElement.tagName == "INPUT") {
+      return false;
+    }
+    if (e.altKey || e.ctrlKey || e.shiftKey) {
+        return false;
+    }
+     var key = e.key
+      if (key === "h") {
+        e.preventDefault();
+        e.stopPropagation();
+        window.location.href = "/";
+      } else if (key === "t") {
+        e.preventDefault();
+        e.stopPropagation();
+        window.location.href = "/tags";
+      } else if (key === "i") {
+          
+        e.preventDefault();
+        e.stopPropagation();
+          const inputs = document.querySelectorAll('input');
+          for (let i = 0; i < inputs.length; i++) {
+            if (inputs[i].offsetParent !== null) {
+              inputs[i].selectionStart = inputs[i].selectionEnd = inputs[i].value.length;
+              inputs[i].focus();
+              break;
+            }
+          }
+    }
+    return false;
+  });
+</script>
+
+<script defer>
+  var links = document.getElementsByTagName("a");
+
+  for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+    if (links[i].hostname != window.location.hostname) {
+      links[i].target = "_blank";
+    }
+  }
+</script>
+
+<script defer>
+  (function () {
+    function getScript(url, success) {
+      var script = document.createElement("script");
+      script.src = url;
+      var head = document.getElementsByTagName("head")[0],
+        done = false;
+      script.onload = script.onreadystatechange = function () {
+        if (
+          !done &&
+          (!this.readyState ||
+            this.readyState == "loaded" ||
+            this.readyState == "complete")
+        ) {
+          done = true;
+          success();
+          script.onload = script.onreadystatechange = null;
+          head.removeChild(script);
+        }
+      };
+      head.appendChild(script);
+    }
+    getScript(
+      "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.slim.min.js",
+      function () {
+        const anchors = $("body").find("h2,h3");
+
+        $(window).scroll(function () {
+          var scrollTop = $(document).scrollTop();
+
+          
+          for (var i = 0; i < anchors.length; i++) {
+            $(
+              'nav ul li a[href="#' + $(anchors[i]).attr("id") + '"]'
+            ).removeClass("active-toc");
+          }
+
+          
+          for (var i = anchors.length - 1; i >= 0; i--) {
+            if (scrollTop > $(anchors[i]).offset().top - 75) {
+              $(
+                'nav ul li a[href="#' + $(anchors[i]).attr("id") + '"]'
+              ).addClass("active-toc");
+              break;
+            }
+          }
+        });
+      }
+    );
+  })();
+</script>
+
+<script src="/fibers/js/quicklink.js"></script>
+<script>
+  quicklink.listen();
+</script>
+
+  </footer>
+
+
+    
+  </body>
+
+<script>
+window.store = {
+    
+    
+    
+    
+    "https:\/\/phenocare.github.com\/fibers\/categories\/": {
+        
+        "title": "Categories",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/phenocare.github.com\/fibers\/categories\/"
+    },
+    
+    
+    
+    "https:\/\/phenocare.github.com\/fibers\/": {
+        
+        "title": "My New Hugo Site",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/phenocare.github.com\/fibers\/"
+    },
+    
+    
+    
+    "https:\/\/phenocare.github.com\/fibers\/tags\/": {
+        
+        "title": "Tags",
+        "tags": [],
+        "content": "", 
+        "url": "https:\/\/phenocare.github.com\/fibers\/tags\/"
+    },
+    
+}
+</script>
+<script defer src="/js/lunr.js"></script>
+<script defer src="/js/search.js"></script>
+
+
+</html>
+
