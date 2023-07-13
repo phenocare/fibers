@@ -1,5 +1,5 @@
 
-![](headingPic.jpg)
+![](HeadingPic.jpg)
 
 # Are you curious about the health benefit of fibre? 
 
