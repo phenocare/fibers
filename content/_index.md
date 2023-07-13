@@ -1,7 +1,7 @@
 
 ![](headingPic.jpg)
 
-# **Are you curious about the health benefit of fibre? **
+# Are you curious about the health benefit of fibre? 
 
 Scientists from the [Australian National Phenome Centre](https://www.murdoch.edu.au/research/anpc) at [Murdoch University](https://www.murdoch.edu.au) are currently studying how quickly different types of dietary fibres reach our lower gut and change into compounds that could potentially improve our health.
 
@@ -24,7 +24,6 @@ Associate Professor Ruey Leng Loo from the Australian National Phenome Centre is
 -	To explore how these chemical compounds can affect our health.
 
 ## **Frequently asked questions**
-We are currently in the process of recruiting participants.
 
 ### 1.	What is the study design?
 You will eat one of eight different vegetables or fruits in each clinic visit along with a standardised low fibre meal plan.  These meals will be provided as part of the study.  
