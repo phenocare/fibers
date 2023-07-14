@@ -21,6 +21,8 @@ Associate Professor Ruey Leng Loo from the Australian National Phenome Centre is
 -	To identify the chemical compounds that are produced in our blood, urine, and/or faeces, after eating different dietary fibres.
 -	To explore how these chemical compounds can affect our health.
 
+![A variety of fresh vegetables, including yacon, Jerusalem artichoke, globe artichoke, elephant garlic, will be used as part of this trial.  Picture credit: Mark McHenry, Mt Lindesay](mixed_vege.jpg)
+
 ## **Frequently asked questions**
 
 ### 1.	What is the study design?
@@ -30,7 +32,7 @@ You will eat one of eight different vegetables or fruits in each clinic visit al
 You can choose from vegetables that contain fibre known to be beneficial for your gut health.  These vegetables include yacon, Jerusalem artichoke, globe artichoke, and elephant garlic.   We also have fruits that contain different types of fibres, including apple, watermelon, orange and tomato.  You can choose more than one.  
 
 ### 3.	What is a low fibre meal, and do I have to prepare them? 
-The low fibre meal plan consists of toasts with butter for breakfast, a roast chicken sandwich for lunch, and roast chicken and potatoes for dinner.  If you are vegetarian, we will substitute meat with egg and chess.  All the food will be provided to you, and you will not need to prepare it. 
+The low fibre meal plan consists of toasts with butter for breakfast, a roast chicken sandwich for lunch, and roast chicken and potatoes for dinner.  If you are vegetarian, we will substitute meat with egg and chesse.  All the food will be provided to you, and you will not need to prepare it. 
 
 ### 4.	What does it involve?
 You will need to attend two clinic visits.  
@@ -45,7 +47,7 @@ On the day of the clinic visit, you will continue with the low fibre diet but ha
 The researcher will arrange a convenient date with you, usually on Monday to Friday.  However, on occasion, we may be able to schedule the clinic on Saturday as well.
 
 ### 6.	Is there any reimbursement for my time and travel cost? 
-You will receive $1.2 per 10km and the parking fees for the day.  If you use the public transport, we will cover your bus or train fares.  Additionally, you will receive a gift voucher worth $25 for completing the screening visit and an additional $50 for completing the study clinic visit.  
+You will receive $1.2 per 10km and the parking fees for the day.  If you use public transport, we will cover your bus or train fares.  Additionally, you will receive a gift voucher worth $25 for completing the screening visit and an additional $50 for completing the study clinic visit.  
 
 ### 7.	Who is funding the study?
 The study is supported by [Future Food System Cooperative Research Centre (FFS CRC)]( https://www.futurefoodsystems.com.au/project/bioactive-components-for-value-add-to-australian-artichokes/) and Murdoch University, in collaboration with [Mt Lindesay](ML.docx).
