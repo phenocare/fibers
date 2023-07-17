@@ -9,7 +9,7 @@ We invite you to help us learn more about dietary fibres.  This involves attendi
 -	Enjoy up to three days of the study meals.
 
 ## **Can you help The FIBRE Study?**
-If you are aged between 18 and 70, you may be eligible to participate in this study.  [Register for the trial here](Register.docx)
+If you are aged between 18 and 70, you may be eligible to participate in this study.  
 
 ## **About the FIBRE Study**
 Consuming dietary fibre has the potential to reduce our risk of disease.  Unfortunately, Australians are not eating enough dietary fibre on a daily basis.  
@@ -44,7 +44,7 @@ Twenty-four hours before the second visit (clinic visit), we will ask you to fol
 On the day of the clinic visit, you will continue with the low fibre diet but have up to three portions of dietary fibres of your choice for breakfast.  Once again, we will perform an hourly hydrogen breath test.  We will also collect urine and blood samples to learn more about what is happening in your body.  A nurse will perform the blood collection during the visit.  If you feel comfortable, you can even provide a stool sample.  
 
 ### 5.	When do I have to attend the clinic visit? 
-The researcher will arrange a convenient date with you, usually on Monday to Friday.  However, on occasion, we may be able to schedule the clinic on Saturday as well.
+The researcher will arrange a convenient date with you, usually on Tuesday, Thursday or Friday.  On occasion, we may be able to schedule the clinic on Saturday as well.
 
 ### 6.	Is there any reimbursement for my time and travel cost? 
 You will receive $1.2 per 10km and the parking fees for the day.  If you use public transport, we will cover your bus or train fares.  Additionally, you will receive a gift voucher worth $25 for completing the screening visit and an additional $50 for completing the study clinic visit.  
@@ -53,7 +53,7 @@ You will receive $1.2 per 10km and the parking fees for the day.  If you use pub
 The study is supported by [Future Food System Cooperative Research Centre (FFS CRC)]( https://www.futurefoodsystems.com.au/project/bioactive-components-for-value-add-to-australian-artichokes/) and Murdoch University, in collaboration with [Mt Lindesay](ML.docx).
 
 ### 8.	Interested in participating?
-To find out more, [register here](Register.docx), and we will send you a link for participant information and electronic consent.
+To find out more and [register here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD), and we will send you a link for participant information and electronic consent.
 
 ![ ](Team.jpg)
 
