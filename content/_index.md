@@ -55,5 +55,5 @@ The study is supported by [Future Food System Cooperative Research Centre (FFS C
 ### 8.	Interested in participating?
 To find out more, [register here](Register.docx), and we will send you a link for participant information and electronic consent.
 
-![*Project Team Members*](image-1.png)
+![ ](Team.jpg)
 
