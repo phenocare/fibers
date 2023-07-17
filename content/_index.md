@@ -4,8 +4,9 @@
 Scientists from the [Australian National Phenome Centre](https://www.murdoch.edu.au/research/anpc) at [Murdoch University](https://www.murdoch.edu.au) are currently studying how quickly different types of dietary fibres reach our lower gut and change into compounds that could potentially improve our health.
 
 We invite you to help us learn more about dietary fibres.  This involves attending two-day visits, with at least one week between each visit, at the Harry Perkin Institute in Murdoch.  During these visits, you will have the opportunity to:
+
 -	Receive a personalised session with a dietician who will teach you about dietary fibres and guide you on how much fibre you should eat each day.
--	Attend an education session where you will learn about how fibres improve our health.
+-	Attend education sessions where you will learn more about how fibres improve our health.
 -	Enjoy up to three days of the study meals.
 
 ## **Can you help The FIBRE Study?**
@@ -21,7 +22,7 @@ Associate Professor Ruey Leng Loo from the Australian National Phenome Centre is
 -	To identify the chemical compounds that are produced in our blood, urine, and/or faeces, after eating different dietary fibres.
 -	To explore how these chemical compounds can affect our health.
 
-![A variety of fresh vegetables, including yacon, Jerusalem artichoke, globe artichoke, elephant garlic, will be used as part of this trial.  Picture credit: Mark McHenry, Mt Lindesay](mixed_vege.jpg)
+![A variety of fresh vegetables, including yacon, Jerusalem artichoke, globe artichoke, elephant garlic, to be used as part this trial.  Picture credit: Mark McHenry, Mt Lindesay](mixed_vege.jpg)
 
 ## **Frequently asked questions**
 
@@ -39,12 +40,12 @@ You will need to attend two clinic visits.
 
 During the first visit (screening visit), we will check your eligible by having you consume a small amount of inulin powder dissolved in water.  You will undergo an hourly hydrogen breath test by exhaling into a hand-held machine for 8 hours.  This test will determine if you are eligible to participate in the study.  
 
-Twenty-four hours before the second visit (clinic visit), we will ask you to follow a low fibre diet for one day.  The meal will be provided to you.  
+Twenty-four hours before the second visit (clinic visit), we will ask you to follow a low fibre diet for one day. Meals will be provided to you.  
 
 On the day of the clinic visit, you will continue with the low fibre diet but have up to three portions of dietary fibres of your choice for breakfast.  Once again, we will perform an hourly hydrogen breath test.  We will also collect urine and blood samples to learn more about what is happening in your body.  A nurse will perform the blood collection during the visit.  If you feel comfortable, you can even provide a stool sample.  
 
 ### 5.	When do I have to attend the clinic visit? 
-The researcher will arrange a convenient date with you, usually on Tuesday, Thursday or Friday.  On occasion, we may be able to schedule the clinic on Saturday as well.
+The researcher will arrange a convenient date with you, usually on Tuesday, Thursday or Friday.  On occasion, we may be able to schedule the clinic on Saturday.
 
 ### 6.	Is there any reimbursement for my time and travel cost? 
 You will receive $1.2 per 10km and the parking fees for the day.  If you use public transport, we will cover your bus or train fares.  Additionally, you will receive a gift voucher worth $25 for completing the screening visit and an additional $50 for completing the study clinic visit.  
@@ -53,7 +54,7 @@ You will receive $1.2 per 10km and the parking fees for the day.  If you use pub
 The study is supported by [Future Food System Cooperative Research Centre (FFS CRC)]( https://www.futurefoodsystems.com.au/project/bioactive-components-for-value-add-to-australian-artichokes/) and Murdoch University, in collaboration with [Mt Lindesay](ML.docx).
 
 ### 8.	Interested in participating?
-To find out more and [register here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD), and we will send you a link for participant information and electronic consent.
+To find out more by reading the [study information sheet here](information_sheet.docx). You can also complete the [electronic consent](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD).
 
 ![ ](Team.jpg)
 
