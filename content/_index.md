@@ -53,7 +53,11 @@ You will receive $1.2 per 10km and the parking fees for the day.  If you use pub
 ### 7.	Who is funding the study?
 The study is supported by [Future Food System Cooperative Research Centre (FFS CRC)]( https://www.futurefoodsystems.com.au/project/bioactive-components-for-value-add-to-australian-artichokes/) and Murdoch University, in collaboration with [Mt Lindesay](ML.docx).
 
-### 8.	Interested in participating?
+
+### 8.	Who has approved this study?
+The study has been reviewed and approved by the Murdoch University Human Ethics Committee (study reference number 2023/068).
+
+### 9.	Interested in participating?
 To find out more by reading the [study information sheet here](information_sheet.docx). You can also complete the [electronic consent here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD).
 
 ![ ](Team.jpg)
