@@ -30,7 +30,9 @@ Associate Professor Ruey Leng Loo from the Australian National Phenome Centre is
 You will eat one of eight different vegetables or fruits in each clinic visit along with a standardised low fibre meal plan.  These meals will be provided as part of the study.  
 
 ### 2.	What are the choices of vegetables and fruits? 
-You can choose from vegetables that contain fibre known to be beneficial for your gut health.  These vegetables include yacon, Jerusalem artichoke, globe artichoke, and elephant garlic.   We also have fruits that contain different types of fibres, including apple, watermelon, orange and tomato.  You can choose more than one.  
+You can choose from vegetables that contain inulin, a fibre known to be beneficial for your gut health.  These vegetables include yacon, Jerusalem artichoke, globe artichoke, and elephant garlic. They are sourced from an organic farm in Western Australia, Mt Lindesay. We also have fruits that contain different types of fibres, including apple, watermelon, orange, and tomato.  
+
+On the consent form, you can choose to participate in more than one vegetable or fruit.
 
 ### 3.	What is a low fibre meal, and do I have to prepare them? 
 The low fibre meal plan consists of toasts with butter for breakfast, a roast chicken sandwich for lunch, and roast chicken and potatoes for dinner.  If you are vegetarian, we will substitute meat with egg and chesse.  All the food will be provided to you, and you will not need to prepare it. 
@@ -44,20 +46,25 @@ Twenty-four hours before the second visit (clinic visit), we will ask you to fol
 
 On the day of the clinic visit, you will continue with the low fibre diet but have up to three portions of dietary fibres of your choice for breakfast.  Once again, we will perform an hourly hydrogen breath test.  We will also collect urine and blood samples to learn more about what is happening in your body.  A nurse will perform the blood collection during the visit.  If you feel comfortable, you can even provide a stool sample.  
 
-### 5.	When do I have to attend the clinic visit? 
+### 5.  What happens during the clinic visits? 
+You will stay in the clinic room throughout the day, except during educational sessions and/or lab visits, which are located in the same building as the clinic room. 
+
+If you usually work from home, you can continue your work from the clinic room. Alternatively, you are welcome to bring your laptop so you can watch tv or perform any relevant activities. If you do not have an electronic device, you recommend bringing books, magazines, newspapers, or any other alternatives to keep yourself occupied during the clinic visit. WIFI access may be provided to on request.  
+
+
+### 6.	When do I have to attend the clinic visit? 
 The researcher will arrange a convenient date with you, usually on Tuesday, Thursday or Friday.  On occasion, we may be able to schedule the clinic on Saturday.
 
-### 6.	Is there any reimbursement for my time and travel cost? 
+### 7.	Is there any reimbursement for my time and travel cost? 
 You will receive $1.2 per 10km and the parking fees for the day.  If you use public transport, we will cover your bus or train fares.  Additionally, you will receive a gift voucher worth $25 for completing the screening visit and an additional $50 for completing the study clinic visit.  
 
-### 7.	Who is funding the study?
+### 8.	Who is funding the study?
 The study is supported by [Future Food System Cooperative Research Centre (FFS CRC)]( https://www.futurefoodsystems.com.au/project/bioactive-components-for-value-add-to-australian-artichokes/) and Murdoch University, in collaboration with [Mt Lindesay](ML.docx).
 
-
-### 8.	Who has approved this study?
+### 9.	Who has approved this study?
 The study has been reviewed and approved by the Murdoch University Human Ethics Committee (study reference number 2023/068).
 
-### 9.	Interested in participating?
+### 10.	Interested in participating?
 To find out more by reading the [study information sheet here](information_sheet.docx). You can also complete the [electronic consent here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD).
 
 ![ ](Team.jpg)
