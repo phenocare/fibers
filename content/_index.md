@@ -51,7 +51,6 @@ You will stay in the clinic room throughout the day, except during educational s
 
 If you usually work from home, you can continue your work from the clinic room. Alternatively, you are welcome to bring your laptop so you can watch tv or perform any relevant activities. If you do not have an electronic device, you recommend bringing books, magazines, newspapers, or any other alternatives to keep yourself occupied during the clinic visit. WIFI access may be provided to on request.  
 
-
 ### 6.	When do I have to attend the clinic visit? 
 The researcher will arrange a convenient date with you, usually on Tuesday, Thursday or Friday.  On occasion, we may be able to schedule the clinic on Saturday.
 
