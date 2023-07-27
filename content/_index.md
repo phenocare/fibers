@@ -44,27 +44,25 @@ During the first visit (screening visit), we will check your eligible by having 
 
 Twenty-four hours before the second visit (clinic visit), we will ask you to follow a low fibre diet for one day. Meals will be provided to you.  
 
-On the day of the clinic visit, you will continue with the low fibre diet but have up to three portions of dietary fibres of your choice for breakfast.  Once again, we will perform an hourly hydrogen breath test.  We will also collect urine and blood samples to learn more about what is happening in your body.  A nurse will perform the blood collection during the visit.  If you feel comfortable, you can even provide a stool sample.  
+On the day of the clinic visit, you will continue with the low fibre diet,  However, for breakfast, you can eat up to three portions of dietary fibres of your choice.  We will do another hydrogen breath test every hour, just like before.  Additionally, we will collect blood sample every hour using a thin tube called an an intravenous cannula.  We will also need a urine sample every two hours to gather more information about what is happening inside your body.  A nurse will be there to handle the blood collection during the visit.   If you feel comfortable, you can even provide a stool sample.  
 
-### 5.  What happens during the clinic visits? 
-You will stay in the clinic room throughout the day, except during educational sessions and/or lab visits, which are located in the same building as the clinic room. 
+You will stay in the clinic room throughout the day, except during educational sessions and/or lab visits, which are located in the same building as the clinic room. If you usually work from home, you can continue your work from the clinic room. Alternatively, you are welcome to bring your laptop so you can watch tv or perform any relevant activities. If you do not have an electronic device, you recommend bringing books, magazines, newspapers, or any other alternatives to keep yourself occupied during the clinic visit. WIFI access may be provided to on request.  
 
-If you usually work from home, you can continue your work from the clinic room. Alternatively, you are welcome to bring your laptop so you can watch tv or perform any relevant activities. If you do not have an electronic device, you recommend bringing books, magazines, newspapers, or any other alternatives to keep yourself occupied during the clinic visit. WIFI access may be provided to on request.  
-
-### 6.	When do I have to attend the clinic visit? 
+### 5.	When do I have to attend the clinic visit? 
 The researcher will arrange a convenient date with you, usually on Tuesday, Thursday or Friday.  On occasion, we may be able to schedule the clinic on Saturday.
 
-### 7.	Is there any reimbursement for my time and travel cost? 
+### 6.	Is there any reimbursement for my time and travel cost? 
 You will receive $1.2 per 10km and the parking fees for the day.  If you use public transport, we will cover your bus or train fares.  Additionally, you will receive a gift voucher worth $25 for completing the screening visit and an additional $50 for completing the study clinic visit.  
 
-### 8.	Who is funding the study?
+### 7.	Who is funding the study?
 The study is supported by [Future Food System Cooperative Research Centre (FFS CRC)]( https://www.futurefoodsystems.com.au/project/bioactive-components-for-value-add-to-australian-artichokes/) and Murdoch University, in collaboration with [Mt Lindesay](ML.docx).
 
-### 9.	Who has approved this study?
+### 8.	Who has approved this study?
 The study has been reviewed and approved by the Murdoch University Human Ethics Committee (study reference number 2023/068).
 
-### 10.	Interested in participating?
+### 9.	Interested in participating?
 To find out more by reading the [study information sheet here](information_sheet.docx). You can also complete the [electronic consent here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD).
 
+### Project Team Members
 ![ ](Team.jpg)
 
