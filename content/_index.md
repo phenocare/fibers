@@ -35,7 +35,7 @@ You can choose from vegetables that contain inulin, a fibre known to be benefici
 On the consent form, you can choose to participate in more than one vegetable or fruit.
 
 ### 3.	What is a low fibre meal, and do I have to prepare them? 
-We are currently in the process of finalising the meal plan with a chef. An example of a low fibre meal plan includes breakfast toasts with butter, a roast chicken sandwich for lunch, and roast chicken and potatoes for dinner.  For those who are vegetarian, we will substitute meat with egg and cheese.  All the food will be provided to you, and there is no need for you to prepare them. 
+We are working with a chef to finalise the low fibre meal. The goal of the low fibre meals is to make sure everyone eats the same food, which helps to reduce any differences in how participant respond.  An example of a low fibre meal plan includes breakfast white bread with butter, chicken pasta for lunch, and dinner.  You don't need to worry about cooking, we will provide all the food for you.
 
 ### 4.	What does it involve?
 You will need to attend two clinic visits.  
@@ -46,7 +46,7 @@ Twenty-four hours before the second visit (clinic visit), we will ask you to fol
 
 On the day of the clinic visit, you will continue with the low fibre diet,  However, for breakfast, we will provide up to three portions of dietary fibres of your choice.  We will do another hydrogen breath test every hour, just like before.  Additionally, we will collect blood sample every hour using a thin tube called an an intravenous cannula.  We will also need a urine sample every two hours to gather more information about what is happening inside your body.  A nurse will be there to handle the blood collection during the visit.   If you feel comfortable, you can even provide a stool sample.  
 
-During each clinic visit, you will stay in the designated clinic room throughout the day, except during educational sessions and/or lab visits, which are located in the same building as the clinic room. If you usually work from home, you can continue your work from the clinic room. Alternatively, you are welcome to bring your laptop so you can watch tv or perform any relevant activities. If you do not have an electronic device, we recommend bringing books, magazines, newspapers, or any other alternatives to keep yourself occupied during the clinic visit. WIFI access may be provided to on request.  
+During each clinic visit, you will stay in the designated clinic room throughout the day, except during lab visits, which are located in the same building as the clinic room. If you usually work from home, you can continue your work from the clinic room. Alternatively, you are welcome to bring your laptop so you can watch tv or perform any relevant activities. If you do not have an electronic device, we recommend bringing books, magazines, newspapers, or any other alternatives to keep yourself occupied during the clinic visit. WIFI access may be provided to on request.  
 
 ### 5.	When do I have to attend the clinic visit? 
 The researcher will arrange a convenient date with you, usually on Tuesday, Thursday or Friday.  On occasion, we may be able to schedule the clinic on Saturday.
