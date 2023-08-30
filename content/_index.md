@@ -61,7 +61,7 @@ The study is supported by [Future Food System Cooperative Research Centre (FFS C
 The study has been reviewed and approved by the Murdoch University Human Ethics Committee (study reference number 2023/068).
 
 ### 9.	Interested in participating?
-To find out more by reading the [study information sheet here](information_sheet.docx). You can also complete the [electronic consent here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD).
+To find out more by reading the [study information sheet here](PARTICIPANT_INFORMATION_SHEET.docx). You can also complete the [electronic consent here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD).
 
 ### Project Team Members
 ![ ](Team.jpg)
