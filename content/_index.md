@@ -35,7 +35,11 @@ You can choose from vegetables that contain inulin, a fibre known to be benefici
 On the consent form, you can choose to participate in more than one vegetable or fruit.
 
 ### 3.	What is a low fibre meal, and do I have to prepare them? 
-We are working with a chef to finalise the low fibre meal. The goal of the low fibre meals is to make sure everyone eats the same food, which helps to reduce any differences in how participant respond.  An example of a low fibre meal plan includes breakfast white bread with butter, chicken pasta in white source for lunch, and dinner.  Crackers and cheese for snack.  You don't need to worry about cooking, we will provide all the food for you.  However, if you have any food intolerance, please contact us to check your suitability. 
+We are working with a chef to finalise the low fibre meal plan. The whole idea behind these low-fibre meals is to ensure everyone eats the same stuff.  This way, we can minimise any differences in how participants react due to differences in their diet.  
+
+The low fibre meal plan includes breakfast white bread with butter, chicken pasta in white source for lunch, and dinner.  When you need a snal, crackers and cheese will be provided.  
+
+The best part?  We will provide all the food for you.  However, if you have any food allergies or intolerance, please get in touch with us so we can check if the low-fibre meal plan is suitable for you. 
 
 ### 4.	What does it involve?
 You will need to attend two clinic visits.  
