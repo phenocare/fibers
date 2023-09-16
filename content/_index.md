@@ -1,34 +1,68 @@
 
-# **Fibre Study: Enhancing Understanding of Dietary Fibres and Their impact on Human Health**
+![](HeadingPic2.jpg)
 
-Did you know that most people don’t eat enough dietary fibres? This can increase the risk of chronic diseases like heart disease and colon cancer. But don’t worry! The Fibre Study is all about understanding how different types of dietary fibres are processed in our body. We want to find out how quickly different fibres reach our lower gut and what happens to them in our blood, urine and poop after we eat them.
+Scientists from the [Australian National Phenome Centre](https://www.murdoch.edu.au/research/anpc) at [Murdoch University](https://www.murdoch.edu.au) are currently studying how quickly different types of dietary fibres reach our lower gut and change into compounds that could potentially improve our health.
 
-## **Our Goal**
-By studying dietary fibres, we hope to find out how long it takes the fibre to travel through our gut. We also want to identify the chemical compounds that are produced after you eat different dietary fibres. This information will help us understand the effects of dietary fibres on our bodies. It might even help shape future advice about fibres and disease risk, as well as potentially reduce healthcare costs.
+We invite you to help us learn more about dietary fibres.  This involves attending two-day visits, with at least one week between each visit, at the Harry Perkin Institute in Murdoch.  During these visits, you will have the opportunity to:
 
-![image](Fig1.png)
+-	Receive a personalised session with a dietician who will teach you about dietary fibres and guide you on how much fibre you should eat each day.
+-	Attend education sessions where you will learn more about how fibres improve our health.
+-	Enjoy up to three days of the study meals.
 
-## **Study design**
-We will ask participants to eat one of eight different dietary fibres. You may even be involved in more than one fibre study! And guess what? We will provide all the meals during the study, so you don’t have to worry about cooking the food.
+## **Can you help The FIBRE Study?**
+If you are aged between 18 and 70, you may be eligible to participate in this study.  
 
-## **Study method**
-We will test each dietary fibre on a group ten people. During the first visit (screening visit), we will check if you are eligible by having you consume a small amount of inulin powder dissolved in water.
-Twenty-four hours before the clinic visit, we will ask you to follow a low fibre diet for one day. On the day of the clinic visit, you will continue with the low fibre diet but have up to three portions of the dietary fibres for breakfast.
-During the screening and clinic visits, you will undergo a series of hydrogen breath tests by exhaling into a machine. On the clinic visit, we will also collect urine and blood samples to learn more about what is happening in your body. If you feel comfortable, you can even provide a poop sample!
+## **About the FIBRE Study**
+Consuming dietary fibre has the potential to reduce our risk of disease.  Unfortunately, Australians are not eating enough dietary fibre on a daily basis.  
 
-![image](Fig3.png)
+Associate Professor Ruey Leng Loo from the Australian National Phenome Centre is leading this research trial, which aims to investigate different types of fibre and their potential influence our health. 
 
-## **Study status**
-We are currently in the process of recruiting participants.
+## **Trial objectives**
+-	To find out how quickly different types of fibre travel through our gut
+-	To identify the chemical compounds that are produced in our blood, urine, and/or faeces, after eating different dietary fibres.
+-	To explore how these chemical compounds can affect our health.
 
-## **Potential benefits to participants**
-As a thank you for participating, we will provide you with standardised meals for three days. You will also get to attend an educational group session where you will learn more about dietary fibres and gut health.Plus, you will have a one-on- one session with a dietician who will help you understand your metabolic health and how much dietary fibre you should consume. As a gesture of gratitude, you will receive a $25 voucher after the screening visit and a $50 voucher for the clinic visit.
+![A variety of fresh vegetables, including yacon, Jerusalem artichoke, globe artichoke, elephant garlic, to be used as part this trial.  Picture credit: Mark McHenry, Mt Lindesay](mixed_vege.jpg)
 
-## **Funding**
-The study is supported by Future Food System Cooperative Research Centre (FFS CRC) and Murdoch University, in collaboration with Mt Lindesay.
+## **Frequently asked questions**
 
-## **Interested in participating?**
-Find out more by reading this participant [information leaflet](pll.docx). Or contact us, we will send you a link for electronic consent.
+### 1.	What is the study design?
+You will eat one of eight different vegetables or fruits in each clinic visit along with a standardised low fibre meal plan.  These meals will be provided as part of the study.  
 
-![image](image-1.png)
+### 2.	What are the choices of vegetables and fruits? 
+You can choose from vegetables that contain inulin, a fibre known to be beneficial for your gut health.  These vegetables include yacon, Jerusalem artichoke, globe artichoke, and elephant garlic. They are sourced from an organic farm in Western Australia, Mt Lindesay. We also have fruits that contain different types of fibres, including apple, watermelon, orange, and tomato.  
+
+On the consent form, you can choose to participate in more than one vegetable or fruit.
+
+### 3.	What is a low fibre meal, and do I have to prepare them? 
+We are working with a chef to finalise the low fibre meal. The goal of the low fibre meals is to make sure everyone eats the same food, which helps to reduce any differences in how participant respond.  An example of a low fibre meal plan includes breakfast white bread with butter, chicken pasta in white source for lunch, and dinner.  Crackers and cheese for snack.  You don't need to worry about cooking, we will provide all the food for you.  However, if you have any food intolerance, please contact us to check your suitability. 
+
+### 4.	What does it involve?
+You will need to attend two clinic visits.  
+
+During the first visit (screening visit), we will check your eligible by having you consume a small amount of inulin powder dissolved in water.  You will undergo an hourly hydrogen breath test by exhaling into a hand-held machine for 8 hours.  This test will determine if you are eligible to participate in the study.  
+
+Twenty-four hours before the second visit (clinic visit), we will ask you to follow a low fibre diet for one day. Meals will be provided to you.  
+
+On the day of the clinic visit, you will continue with the low fibre diet,  However, for breakfast, we will provide up to three portions of dietary fibres of your choice.  We will do another hydrogen breath test every hour, just like before.  Additionally, we will collect blood sample every hour using a thin tube called an an intravenous cannula.  We will also need a urine sample every two hours to gather more information about what is happening inside your body.  A nurse will be there to handle the blood collection during the visit.   If you feel comfortable, you can even provide a stool sample.  
+
+During each clinic visit, you will stay in the designated clinic room throughout the day, except during lab visits, which are located in the same building as the clinic room. If you usually work from home, you can continue your work from the clinic room. Alternatively, you are welcome to bring your laptop so you can watch tv or perform any relevant activities. If you do not have an electronic device, we recommend bringing books, magazines, newspapers, or any other alternatives to keep yourself occupied during the clinic visit. WIFI access may be provided to on request.  
+
+### 5.	When do I have to attend the clinic visit? 
+The researcher will arrange a convenient date with you, usually on Tuesday, Thursday or Friday.  On occasion, we may be able to schedule the clinic on Saturday.
+
+### 6.	Is there any reimbursement for my time and travel cost? 
+You will receive $1.2 per 10km and the parking fees for the day.  If you use public transport, we will cover your bus or train fares.  Additionally, you will receive a gift voucher worth $25 for completing the screening visit and an additional $50 for completing the study clinic visit.  
+
+### 7.	Who is funding the study?
+The study is supported by [Future Food System Cooperative Research Centre (FFS CRC)]( https://www.futurefoodsystems.com.au/project/bioactive-components-for-value-add-to-australian-artichokes/) and Murdoch University, in collaboration with [Mt Lindesay](ML.docx).
+
+### 8.	Who has approved this study?
+The study has been reviewed and approved by the Murdoch University Human Ethics Committee (study reference number 2023/068).
+
+### 9.	Interested in participating?
+To find out more by reading the [study information sheet here](PARTICIPANT_INFORMATION_SHEET.docx). You can also complete the [electronic consent here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD).
+
+### Project Team Members
+![ ](Team.jpg)
 
