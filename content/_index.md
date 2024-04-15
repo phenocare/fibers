@@ -1,11 +1,11 @@
 
-![](HeadingPic2.jpg)
+![](Website1.jpg)
 
 Scientists from the [Australian National Phenome Centre](https://www.murdoch.edu.au/research/anpc) at [Murdoch University](https://www.murdoch.edu.au) are currently studying how quickly different types of dietary fibres reach our lower gut and change into compounds that could potentially improve our health.
 
 We invite you to help us learn more about dietary fibres.  This involves attending two-day visits, with at least one week between each visit, at the Harry Perkin Institute in Murdoch.  During these visits, you will have the opportunity to:
 
--	Receive a personalised session with a dietician who will teach you about dietary fibres and guide you on how much fibre you should eat each day.
+-	Receive a personalised session with a dietician, who will teach you about dietary fibres and guide you on how much fibre you should eat each day.
 -	Attend education sessions where you will learn more about how fibres improve our health.
 -	Enjoy up to three days of the study meals.
 
@@ -15,7 +15,7 @@ If you are aged between 18 and 70, you may be eligible to participate in this st
 ## **About the FIBRE Study**
 Consuming dietary fibre has the potential to reduce our risk of disease.  Unfortunately, Australians are not eating enough dietary fibre on a daily basis.  
 
-Associate Professor Ruey Leng Loo from the Australian National Phenome Centre is leading this research trial, which aims to investigate different types of fibre and their potential influence our health. 
+Associate Professor Ruey Leng Loo from the Australian National Phenome Centre is leading this research trial, which aims to investigate different types of fibre and their potential influence on our health. 
 
 ## **Trial objectives**
 -	To find out how quickly different types of fibre travel through our gut
@@ -32,21 +32,25 @@ You will eat one of eight different vegetables or fruits in each clinic visit al
 ### 2.	What are the choices of vegetables and fruits? 
 You can choose from vegetables that contain inulin, a fibre known to be beneficial for your gut health.  These vegetables include yacon, Jerusalem artichoke, globe artichoke, and elephant garlic. They are sourced from an organic farm in Western Australia, Mt Lindesay. We also have fruits that contain different types of fibres, including apple, watermelon, orange, and tomato.  
 
-On the consent form, you can choose to participate in more than one vegetable or fruit.
+On the consent form, you can choose all the fruit and vegetable options that you are willing to consume.
 
 ### 3.	What is a low fibre meal, and do I have to prepare them? 
-We are working with a chef to finalise the low fibre meal. The goal of the low fibre meals is to make sure everyone eats the same food, which helps to reduce any differences in how participant respond.  An example of a low fibre meal plan includes breakfast white bread with butter, chicken pasta in white source for lunch, and dinner.  Crackers and cheese for snack.  You don't need to worry about cooking, we will provide all the food for you.  However, if you have any food intolerance, please contact us to check your suitability. 
+The low fibre meal plan includes white bread and butter for breakfast, chicken pasta in white sauce for lunch and dinner. These will be provided to you as well as cheese and crackers as snacks. Minimal preparation will be required. We do however require that you only consume the meals provided to you to ensure consistency in our results. 
+
+If you have any food allergies or intolerances, please get in touch with us. 
 
 ### 4.	What does it involve?
 You will need to attend two clinic visits.  
 
-During the first visit (screening visit), we will check your eligible by having you consume a small amount of inulin powder dissolved in water.  You will undergo an hourly hydrogen breath test by exhaling into a hand-held machine for 8 hours.  This test will determine if you are eligible to participate in the study.  
+During the first visit (screening), we will check your eligibility by having you consume a small amount of inulin powder dissolved in water.  You will then undergo a hydrogen breath test by exhaling into a hand-held machine. This will be repeated every hour for 8 hours.  This test will determine your eligibility to participate in the study. 
 
-Twenty-four hours before the second visit (clinic visit), we will ask you to follow a low fibre diet for one day. Meals will be provided to you.  
+If you are eligible, we will provide you with the low fibre meals and snacks ahead of your second clinic visit. 
 
-On the day of the clinic visit, you will continue with the low fibre diet,  However, for breakfast, we will provide up to three portions of dietary fibres of your choice.  We will do another hydrogen breath test every hour, just like before.  Additionally, we will collect blood sample every hour using a thin tube called an an intravenous cannula.  We will also need a urine sample every two hours to gather more information about what is happening inside your body.  A nurse will be there to handle the blood collection during the visit.   If you feel comfortable, you can even provide a stool sample.  
+Twenty-four hours before your second clinic visit, consume the low fibre meals provided. During the clinic visit, you will continue with the low fibre diet.  However, for breakfast, we will provide you with up to three portions of dietary fibres of your choice.  
 
-During each clinic visit, you will stay in the designated clinic room throughout the day, except during lab visits, which are located in the same building as the clinic room. If you usually work from home, you can continue your work from the clinic room. Alternatively, you are welcome to bring your laptop so you can watch tv or perform any relevant activities. If you do not have an electronic device, we recommend bringing books, magazines, newspapers, or any other alternatives to keep yourself occupied during the clinic visit. WIFI access may be provided to on request.  
+You will perform hydrogen breath tests every hour for 8 hours. Additionally, a nurse will collect blood samples every hour through a tube in the vein and you will also collect a urine sample every two hours to gather more information about what is happening inside your body. If you feel comfortable, you can even provide a stool sample.  
+
+During each clinic visit, you are welcome to continue working using your laptop or perform any relevant activities. Alternatively, we recommend bringing books, magazines, newspapers, to keep yourself occupied during the clinic visit. WIFI access can be provided to you on request.  
 
 ### 5.	When do I have to attend the clinic visit? 
 The researcher will arrange a convenient date with you, usually on Tuesday, Thursday or Friday.  On occasion, we may be able to schedule the clinic on Saturday.
@@ -61,7 +65,7 @@ The study is supported by [Future Food System Cooperative Research Centre (FFS C
 The study has been reviewed and approved by the Murdoch University Human Ethics Committee (study reference number 2023/068).
 
 ### 9.	Interested in participating?
-To find out more by reading the [study information sheet here](PARTICIPANT_INFORMATION_SHEET.docx). You can also complete the [electronic consent here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD).
+To find out more by reading the [study information sheet here](PARTICIPANT_INFORMATION_SHEET_V2.docx). You can also complete the [electronic consent here](https://mdhs-redcap.meddent.uwa.edu.au/fmdhs/surveys/?s=FH3747TCYCPKJEPD).
 
 ### Project Team Members
 ![ ](Team.jpg)
