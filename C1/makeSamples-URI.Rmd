@@ -82,7 +82,7 @@ manifest$receptionDate <- rep(today, N)
 
 # sampleMatrixTypes are predefined. Use getMatrices() to obtain a list of
 # valid types. Most common are PLA, SER and URI
-manifest$sampleMatrixType <- rep("PLA", N)
+manifest$sampleMatrixType <- manifest$sampleMatrixType
 
 # sample volume must be in microliter without unit (eg. 500)
 manifest$sampleVolume <- manifest$sampleVolume
@@ -133,19 +133,10 @@ fi <- duplicated(paste0(manifest$sourceID, manifest$sampleTimePoint, manifest$sa
 table(fi)
 ```
 
-```{r}
-manifest$sampleAliquots[fi] <- 2
-fi <- duplicated(manifest$tubeLabel)
-table(fi)
-manifest$tubeLabel[fi] <- paste0(manifest$tubeLabel[fi], "-dups")
-```
 
-# add complementary information into the comment column 
+# we use correction from RLL
 ```{r}
-# # use this for external projects only
-# for (i in 1:nrow(manifest)) {
-#   manifest$comments[i] <- toJSON(manifestOriginal[i,], unbox = TRUE)
-# }
+# tt <- read.table("~/Downloads/sampleDescriptionListUri.ignore.txt", header = TRUE, sep = "\t")
 ```
 
 # creation of the sample description list
