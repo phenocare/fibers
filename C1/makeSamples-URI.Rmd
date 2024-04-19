@@ -187,3 +187,139 @@ write.table(sampleDescriptionList,
 # and disconnecting DB
 dbDisconnect(con)
 ```
+
+# RLL forgot some samples (she added to the sampleDescList)
+```{r}
+tt <- read.table("originalFiles/sampleDescriptionListUri_V2.ignore.txt", header = TRUE, sep = "\t")
+tt <- tt[432:434,1:18]
+checkSamples(tt)
+tt$boxName <- cleanNames(tt$boxName)
+# insertSamples(tt)
+```
+
+
+NMR|FIBr02|fibers_C1_URI_NMR-URINE@fEPP_FIBr02_FIBp024_80_FIB01179,usera3,FIBr02,usera4,fib623
+NMR|FIBr02|fibers_C1_URI_NMR-URINE@fEPP_FIBr02_FIBp024_81_FIB01179,usera3,FIBr02,usera4,fib623
+NMR|FIBr02|fibers_C1_URI_NMR-URINE@fEPP_FIBr02_FIBp024_82_FIB01179,usera3,FIBr02,usera4,fib623
+```{r}
+# select * from folders where folder like '%FIB01179%'
+folder <- paste(paste("fibers", 
+       "C1", 
+       "URI", 
+       "NMR-URINE@fEPP",
+       "FIBr02",
+       "FIBp024",
+       c(83, 84, 85),
+       tt$sampleID[1], sep = "_"),
+      "usera3",
+      "FIBr02",
+      "usera4",
+      tt$sourceID[1],
+      sep = ",")
+# dbExecute(con, paste0("insert into folders ('type', 'runID', 'folder') values ('NMR', 'FIBr02', '", paste0(folder[1]),"')"))
+# dbExecute(con, paste0("insert into folders ('type', 'runID', 'folder') values ('NMR', 'FIBr02', '", paste0(folder[2]),"')"))
+# dbExecute(con, paste0("insert into folders ('type', 'runID', 'folder') values ('NMR', 'FIBr02', '", paste0(folder[3]),"')"))
+
+folder <- paste(paste("fibers", 
+       "C1", 
+       "URI", 
+       "NMR-URINE@fEPP",
+       "FIBr02",
+       "FIBp024",
+       c(86, 87, 88),
+       tt$sampleID[2], sep = "_"),
+      "usera3",
+      "FIBr02",
+      "usera4",
+      tt$sourceID[2],
+      sep = ",")
+# dbExecute(con, paste0("insert into folders ('type', 'runID', 'folder') values ('NMR', 'FIBr02', '", paste0(folder[1]),"')"))
+# dbExecute(con, paste0("insert into folders ('type', 'runID', 'folder') values ('NMR', 'FIBr02', '", paste0(folder[2]),"')"))
+# dbExecute(con, paste0("insert into folders ('type', 'runID', 'folder') values ('NMR', 'FIBr02', '", paste0(folder[3]),"')"))
+
+folder <- paste(paste("fibers", 
+       "C1", 
+       "URI", 
+       "NMR-URINE@fEPP",
+       "FIBr02",
+       "FIBp024",
+       c(89, 90, 91),
+       tt$sampleID[3], sep = "_"),
+      "usera3",
+      "FIBr02",
+      "usera4",
+      tt$sourceID[3],
+      sep = ",")
+# dbExecute(con, paste0("insert into folders ('type', 'runID', 'folder') values ('NMR', 'FIBr02', '", paste0(folder[1]),"')"))
+# dbExecute(con, paste0("insert into folders ('type', 'runID', 'folder') values ('NMR', 'FIBr02', '", paste0(folder[2]),"')"))
+# dbExecute(con, paste0("insert into folders ('type', 'runID', 'folder') values ('NMR', 'FIBr02', '", paste0(folder[3]),"')"))
+```
+
+now we need to modify plates
+```{r}
+lastIdx <- dbGetQuery(con, "select idx from plates order by idx desc limit 1")
+idx <- seq_len(3) + as.numeric(lastIdx)
+pos <- c("C6", "D6", "E6")
+```
+
+FIB01142|H5|FIBp024|fibers|C1|URI|48977|FIBp024
+```{r}
+projectName <- "fibers"
+cohortName <- "C1"
+sampleMatrixType <- "URI"
+plateID <- "FIBp024"
+qry <- paste0("insert into plates ('sampleID', 
+              'wellPos', 
+              'plateID', 
+              'projectName', 
+              'cohortName', 
+              'sampleMatrixType', 
+              'idx',
+              'plateOriginal') values
+              ('", tt$sampleID[1], "',
+              '", pos[1], "',
+              '", plateID, "',
+              '", projectName,"',
+              '", cohortName,"',
+              '", sampleMatrixType,"',
+              '", idx[1],"',
+              '", plateID,"')")
+# dbExecute(con, qry)
+
+qry <- paste0("insert into plates ('sampleID', 
+              'wellPos', 
+              'plateID', 
+              'projectName', 
+              'cohortName', 
+              'sampleMatrixType', 
+              'idx',
+              'plateOriginal') values
+              ('", tt$sampleID[2], "',
+              '", pos[2], "',
+              '", plateID, "',
+              '", projectName,"',
+              '", cohortName,"',
+              '", sampleMatrixType,"',
+              '", idx[2],"',
+              '", plateID,"')")
+# dbExecute(con, qry)
+
+qry <- paste0("insert into plates ('sampleID', 
+              'wellPos', 
+              'plateID', 
+              'projectName', 
+              'cohortName', 
+              'sampleMatrixType', 
+              'idx',
+              'plateOriginal') values
+              ('", tt$sampleID[3], "',
+              '", pos[3], "',
+              '", plateID, "',
+              '", projectName,"',
+              '", cohortName,"',
+              '", sampleMatrixType,"',
+              '", idx[3],"',
+              '", plateID,"')")
+# dbExecute(con, qry)
+```
+
