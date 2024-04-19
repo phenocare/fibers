@@ -144,6 +144,7 @@ HOLDER,USER,NAME,TITLE,EXPNO,SOLVENT,EXPERIMENT,PARAMETERS,DISK
 296,nmrsu,fibers_C1_URI_NMR-URINE@fEPP_FIBr02_FIBp024,fibers_NMR-URINE_URI_LTR_R8C12\n,481,Urine,PROF_URINE_JRES,"usera2,LTR,usera3,FIBr02,usera4,URI",D:\IVDrData\data
 296,nmrsu,fibers_C1_URI_NMR-URINE@fEPP_FIBr02_FIBp024,fibers_NMR-URINE_URI_LTR_R8C12\n,482,Urine,PROF_URINE_DAS,"usera2,LTR,usera3,FIBr02,usera4,URI",D:\IVDrData\data
 RLL forgot 3 samples that where added manually in an untested stunt… beware,,,,,,,,
+"Please complete the holders accordingly that corresponds to C6, D6 and E6",,,,,,,,
 ,nmrsu,fibers_C1_URI_NMR-URINE@fEPP_FIBr02_FIBp024,fibers_NMR-URINE_URI_LTR_R8C12\n,490,Urine,PROF_URINE_NOESY,"usera2,FIB01180,usera3,FIBr02,usera4,fib117",D:\IVDrData\data
 ,nmrsu,fibers_C1_URI_NMR-URINE@fEPP_FIBr02_FIBp024,fibers_NMR-URINE_URI_LTR_R8C12\n,491,Urine,PROF_URINE_JRES,"usera2,FIB01180,usera3,FIBr02,usera4,fib117",D:\IVDrData\data
 ,nmrsu,fibers_C1_URI_NMR-URINE@fEPP_FIBr02_FIBp024,fibers_NMR-URINE_URI_LTR_R8C12\n,492,Urine,PROF_URINE_DAS,"usera2,FIB01180,usera3,FIBr02,usera4,fib117",D:\IVDrData\data
