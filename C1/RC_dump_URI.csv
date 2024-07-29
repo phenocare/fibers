@@ -1,0 +1,435 @@
+"sampleID","sampleTimePoint.x","recordId","visit","timePoint","bloodId","urineId","fecesId","type","typeId","sampleTimePoint.y","bmi","age"
+"FIB00818","t0-u1","FIB112","Clinic Visit 1","T0","FIB112_B1_T0","FIB112_U1_T0","","Yacon","V1","t0-v1",20,48
+"FIB00906","t0-u2","FIB112","Clinic Visit 2","T0","FIB112_B2_T0","FIB112_U2_T0","","Globe Artichoke","V2","t0-v2",20,48
+"FIB01066","t0-u3","FIB112","Clinic Visit 3","T0","FIB112_B3_T0","FIB112_U3_T0","","Orange","V3","t0-v3",20,48
+"FIB00910","t2-u2","FIB112","Clinic Visit 2","T2","FIB112_B2_T2","FIB112_U2_T2","","Globe Artichoke","V2","t2-v2",20,48
+"FIB01071","t2-u3","FIB112","Clinic Visit 3","T2","FIB112_B3_T2","FIB112_U3_T2","","Orange","V3","t2-v3",20,48
+"FIB01076","t3-u3","FIB112","Clinic Visit 3","T3","FIB112_B3_T3","FIB112_U3_T3","","Orange","V3","t3-v3",20,48
+"FIB00827","t4-u1","FIB112","Clinic Visit 1","T4","FIB112_B1_T4","FIB112_U1_T4","","Yacon","V1","t4-v1",20,48
+"FIB00918","t4-u2","FIB112","Clinic Visit 2","T4","FIB112_B2_T4","FIB112_U2_T4","","Globe Artichoke","V2","t4-v2",20,48
+"FIB01078","t4-u3","FIB112","Clinic Visit 3","T4","FIB112_B3_T4","FIB112_U3_T4","","Orange","V3","t4-v3",20,48
+"FIB00832","t6-u1","FIB112","Clinic Visit 1","T6","FIB112_B1_T6","FIB112_U1_T6","","Yacon","V1","t6-v1",20,48
+"FIB00933","t6-u2","FIB112","Clinic Visit 2","T6","FIB112_B2_T6","FIB112_U2_T6","","Globe Artichoke","V2","t6-v2",20,48
+"FIB01083","t6-u3","FIB112","Clinic Visit 3","T6","FIB112_B3_T6","FIB112_U3_T6","","Orange","V3","t6-v3",20,48
+"FIB00837","t8-u1","FIB112","Clinic Visit 1","T8","FIB112_B1_T8","FIB112_U1_T8","","Yacon","V1","t8-v1",20,48
+"FIB00940","t8-u2","FIB112","Clinic Visit 2","T8","FIB112_B2_T8","FIB112_U2_T8","","Globe Artichoke","V2","t8-v2",20,48
+"FIB01088","t8-u3","FIB112","Clinic Visit 3","T8","FIB112_B3_T8","FIB112_U3_T8","","Orange","V3","t8-v3",20,48
+"FIB00783","t0-u1","FIB117","Clinic Visit 1","T0","FIB117_B1_T0","FIB117_U1_T0","FIB117_F1_T0","Yacon","V1","t0-v1",23,65
+"FIB00842","t0-u2","FIB117","Clinic Visit 2","T0","FIB117_B2_T0","FIB117_U2_T0","","Elephant Garlic","V2","t0-v2",23,65
+"FIB00902","t0-u3","FIB117","Clinic Visit 3","T0","FIB117_B3_T0","FIB117_U3_T0","","Globe Artichoke","V3","t0-v3",23,65
+"FIB01018","t0-u4","FIB117","Clinic Visit 4","T0","FIB117_B4_T0","FIB117_U4_T0","","Orange","V4","t0-v4",23,65
+"FIB00787","t2-u1","FIB117","Clinic Visit 1","T2","FIB117_B1_T2","FIB117_U1_T2","","Yacon","V1","t2-v1",23,65
+"FIB00846","t2-u2","FIB117","Clinic Visit 2","T2","FIB117_B2_T2","FIB117_U2_T2","","Elephant Garlic","V2","t2-v2",23,65
+"FIB00909","t2-u3","FIB117","Clinic Visit 3","T2","FIB117_B3_T2","FIB117_U3_T2","","Globe Artichoke","V3","t2-v3",23,65
+"FIB01180","t2-u4","FIB117","Clinic Visit 4","T2","FIB117_B4_T2","FIB117_U4_T2","","Orange","V4","t2-v4",23,65
+"FIB00791","t4-u1","FIB117","Clinic Visit 1","T4","FIB117_B1_T4","FIB117_U1_T4","","Yacon","V1","t4-v1",23,65
+"FIB00850","t4-u2","FIB117","Clinic Visit 2","T4","FIB117_B2_T4","FIB117_U2_T4","","Elephant Garlic","V2","t4-v2",23,65
+"FIB00919","t4-u3","FIB117","Clinic Visit 3","T4","FIB117_B3_T4","FIB117_U3_T4","","Globe Artichoke","V3","t4-v3",23,65
+"FIB01026","t4-u4","FIB117","Clinic Visit 4","T4","FIB117_B4_T4","FIB117_U4_T4","","Orange","V4","t4-v4",23,65
+"FIB00795","t6-u1","FIB117","Clinic Visit 1","T6","FIB117_B1_T6","FIB117_U1_T6","","Yacon","V1","t6-v1",23,65
+"FIB00854","t6-u2","FIB117","Clinic Visit 2","T6","FIB117_B2_T6","FIB117_U2_T6","","Elephant Garlic","V2","t6-v2",23,65
+"FIB00932","t6-u3","FIB117","Clinic Visit 3","T6","FIB117_B3_T6","FIB117_U3_T6","","Globe Artichoke","V3","t6-v3",23,65
+"FIB01031","t6-u4","FIB117","Clinic Visit 4","T6","FIB117_B4_T6","FIB117_U4_T6","","Orange","V4","t6-v4",23,65
+"FIB00799","t8-u1","FIB117","Clinic Visit 1","T8","FIB117_B1_T8","FIB117_U1_T8","","Yacon","V1","t8-v1",23,65
+"FIB00858","t8-u2","FIB117","Clinic Visit 2","T8","FIB117_B2_T8","FIB117_U2_T8","","Elephant Garlic","V2","t8-v2",23,65
+"FIB00941","t8-u3","FIB117","Clinic Visit 3","T8","FIB117_B3_T8","FIB117_U3_T8","","Globe Artichoke","V3","t8-v3",23,65
+"FIB01036","t8-u4","FIB117","Clinic Visit 4","T8","FIB117_B4_T8","FIB117_U4_T8","","Orange","V4","t8-v4",23,65
+"FIB00952","t0-u1","FIB123","Clinic Visit 1","T0","FIB123_B1_T0","FIB123_U1_T0","FIB123_F1_T0","Globe Artichoke","V1","t0-v1",23,52
+"FIB01008","t0-u2","FIB123","Clinic Visit 2","T0","FIB123_B2_T0","FIB123_U2_T0","","Orange","V2","t0-v2",23,52
+"FIB01093","t0-u3","FIB123","Clinic Visit 3","T0","FIB123_B3_T0","FIB123_U3_T0","","Tomato","V3","t0-v3",23,52
+"FIB01128","t0-u4","FIB123","Clinic Visit 4","T0","FIB123_B4_T0","FIB123_U4_T0","","Watermelon","V4","t0-v4",23,52
+"FIB00957","t2-u1","FIB123","Clinic Visit 1","T2","FIB123_B1_T2","FIB123_U1_T2","","Globe Artichoke","V1","t2-v1",23,52
+"FIB01010","t2-u2","FIB123","Clinic Visit 2","T2","FIB123_B2_T2","FIB123_U2_T2","","Orange","V2","t2-v2",23,52
+"FIB01099","t2-u3","FIB123","Clinic Visit 3","T2","FIB123_B3_T2","FIB123_U3_T2","","Tomato","V3","t2-v3",23,52
+"FIB01133","t2-u4","FIB123","Clinic Visit 4","T2","FIB123_B4_T4","FIB123_U4_T4","","Watermelon","V4","t2-v4",23,52
+"FIB00962","t4-u1","FIB123","Clinic Visit 1","T4","FIB123_B1_T4","FIB123_U1_T4","","Globe Artichoke","V1","t4-v1",23,52
+"FIB01012","t4-u2","FIB123","Clinic Visit 2","T4","FIB123_B2_T4","FIB123_U2_T4","","Orange","V2","t4-v2",23,52
+"FIB01105","t4-u3","FIB123","Clinic Visit 3","T4","FIB123_B3_T4","FIB123_U3_T4","","Tomato","V3","t4-v3",23,52
+"FIB01138","t4-u4","FIB123","Clinic Visit 4","T4","FIB123_B4_T4","FIB123_U4_T0","","Watermelon","V4","t4-v4",23,52
+"FIB00967","t6-u1","FIB123","Clinic Visit 1","T6","FIB123_B1_T6","FIB123_U1_T6","","Globe Artichoke","V1","t6-v1",23,52
+"FIB01014","t6-u2","FIB123","Clinic Visit 2","T6","FIB123_B2_T6","FIB123_U2_T6","","Orange","V2","t6-v2",23,52
+"FIB01111","t6-u3","FIB123","Clinic Visit 3","T6","FIB123_B3_T6","FIB123_U3_T6","","Tomato","V3","t6-v3",23,52
+"FIB01143","t6-u4","FIB123","Clinic Visit 4","T6","FIB123_B4_T6","FIB123_U4_T6","","Watermelon","V4","t6-v4",23,52
+"FIB00972","t8-u1","FIB123","Clinic Visit 1","T8","FIB123_B1_T8","FIB123_U1_T8","","Globe Artichoke","V1","t8-v1",23,52
+"FIB01016","t8-u2","FIB123","Clinic Visit 2","T8","FIB123_B2_T8","FIB123_U2_T8","","Orange","V2","t8-v2",23,52
+"FIB01117","t8-u3","FIB123","Clinic Visit 3","T8","FIB123_B3_T6","FIB123_U3_T6","","Tomato","V3","t8-v3",23,52
+"FIB01148","t8-u4","FIB123","Clinic Visit 4","T8","FIB123_B4_T8","FIB123_U4_T8","","Watermelon","V4","t8-v4",23,52
+"FIB00767","t0-u1","FIB150","Clinic Visit 1","T0","FIB150_B1_T0","FIB150_U1_T0","FIB150_F1_T0","Jerusalem Artichoke","V1","t0-v1",21,46
+"FIB00803","t0-u2","FIB150","Clinic Visit 2","T0","FIB150_B2_T0","FIB150_U2_T0","","Apple","V2","t0-v2",21,46
+"FIB00843","t0-u3","FIB150","Clinic Visit 3","T0","FIB150_B3_T0","FIB150_U3_T0","","Globe Artichoke","V3","t0-v3",21,46
+"FIB00904","t0-u4","FIB150","Clinic Visit 4","T0","FIB150_B4_T0","FIB150_U4_T0","","Yacon","V4","t0-v4",21,46
+"FIB01067","t0-u5","FIB150","Clinic Visit 5","T0","FIB150_B5_T0","FIB150_U5_T0","","Watermelon","V5","t0-v5",21,46
+"FIB00928","t0-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00771","t2-u1","FIB150","Clinic Visit 1","T2","FIB150_B1_T2","FIB150_U1_T2","","Jerusalem Artichoke","V1","t2-v1",21,46
+"FIB00806","t2-u2","FIB150","Clinic Visit 2","T2","FIB150_B2_T2","FIB150_U2_T2","","Apple","V2","t2-v2",21,46
+"FIB00847","t2-u3","FIB150","Clinic Visit 3","T2","FIB150_B3_T2","FIB150_U3_T2","","Globe Artichoke","V3","t2-v3",21,46
+"FIB00914","t2-u4","FIB150","Clinic Visit 4","T2","FIB150_B4_T2","FIB150_U4_T2","","Yacon","V4","t2-v4",21,46
+"FIB01072","t2-u5","FIB150","Clinic Visit 5","T2","FIB150_B5_T2","FIB150_U5_T2","","Watermelon","V5","t2-v5",21,46
+"FIB00929","t2-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00809","t4-u2","FIB150","Clinic Visit 2","T4","FIB150_B2_T4","FIB150_U2_T4","","Apple","V2","t4-v2",21,46
+"FIB00851","t4-u3","FIB150","Clinic Visit 3","T4","FIB150_B3_T4","FIB150_U3_T4","","Globe Artichoke","V3","t4-v3",21,46
+"FIB00922","t4-u4","FIB150","Clinic Visit 4","T4","FIB150_B4_T4","FIB150_U4_T4","","Yacon","V4","t4-v4",21,46
+"FIB01079","t4-u5","FIB150","Clinic Visit 5","T4","FIB150_B5_T4","FIB150_U5_T4","","Watermelon","V5","t4-v5",21,46
+"FIB00930","t4-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00778","t6-u1","FIB150","Clinic Visit 1","T6","FIB150_B1_T6","FIB150_U1_T6","","Jerusalem Artichoke","V1","t6-v1",21,46
+"FIB00812","t6-u2","FIB150","Clinic Visit 2","T6","FIB150_B2_T6","FIB150_U2_T6","","Apple","V2","t6-v2",21,46
+"FIB00855","t6-u3","FIB150","Clinic Visit 3","T6","FIB150_B3_T6","FIB150_U3_T6","","Globe Artichoke","V3","t6-v3",21,46
+"FIB00936","t6-u4","FIB150","Clinic Visit 4","T6","FIB150_B4_T6","FIB150_U4_T6","","Yacon","V4","t6-v4",21,46
+"FIB01084","t6-u5","FIB150","Clinic Visit 5","T6","FIB150_B5_T6","FIB150_U5_T6","","Watermelon","V5","t6-v5",21,46
+"FIB00931","t6-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00782","t8-u1","FIB150","Clinic Visit 1","T8","FIB150_B1_T8","FIB150_U1_T8","","Jerusalem Artichoke","V1","t8-v1",21,46
+"FIB00815","t8-u2","FIB150","Clinic Visit 2","T8","FIB150_B2_T8","FIB150_U2_T8","","Apple","V2","t8-v2",21,46
+"FIB00859","t8-u3","FIB150","Clinic Visit 3","T8","FIB150_B3_T8","FIB150_U3_T8","","Globe Artichoke","V3","t8-v3",21,46
+"FIB00945","t8-u4","FIB150","Clinic Visit 4","T8","FIB150_B4_T8","FIB150_U4_T8","","Yacon","V4","t8-v4",21,46
+"FIB01089","t8-u5","FIB150","Clinic Visit 5","T8","FIB150_B5_T8","FIB150_U5_T8","","Watermelon","V5","t8-v5",21,46
+"FIB01163","t8-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00749","t0-u1","FIB162","Clinic Visit 1","T0","FIB162_B1_T0","FIB162_U1_T0","","Globe Artichoke","V1","t0-v1",23,22
+"FIB00948","t0-u2","FIB162","Clinic Visit 2","T0","FIB162_B2_T0","FIB162_U2_T0","","Apple","V2","t0-v2",23,22
+"FIB00752","t2-u1","FIB162","Clinic Visit 1","T2","FIB162_B1_T2","FIB162_U1_T2","","Globe Artichoke","V1","t2-v1",23,22
+"FIB00953","t2-u2","FIB162","Clinic Visit 2","T2","FIB162_B2_T2","FIB162_U2_T2","","Apple","V2","t2-v2",23,22
+"FIB00756","t4-u1","FIB162","Clinic Visit 1","T4","FIB162_B1_T4","FIB162_U1_T4","","Globe Artichoke","V1","t4-v1",23,22
+"FIB00958","t4-u2","FIB162","Clinic Visit 2","T4","FIB162_B2_T4","FIB162_U2_T4","","Apple","V2","t4-v2",23,22
+"FIB00760","t6-u1","FIB162","Clinic Visit 1","T6","FIB162_B1_T6","FIB162_U1_T6","","Globe Artichoke","V1","t6-v1",23,22
+"FIB00963","t6-u2","FIB162","Clinic Visit 2","T6","FIB162_B2_T6","FIB162_U2_T6","","Apple","V2","t6-v2",23,22
+"FIB00761","t8-u1","FIB162","Clinic Visit 1","T8","FIB162_B1_T8","FIB162_U1_T8","","Globe Artichoke","V1","t8-v1",23,22
+"FIB00968","t8-u2","FIB162","Clinic Visit 2","T8","FIB162_B2_T8","FIB162_U2_T8","","Apple","V2","t8-v2",23,22
+"FIB00750","t0-u1","FIB193","Clinic Visit 1","T0","FIB193_B1_T0","FIB193_U1_T0","","Yacon","V1","t0-v1",24,22
+"FIB00753","t2-u1","FIB193","Clinic Visit 1","T2","FIB193_B1_T2","FIB193_U1_T2","","Yacon","V1","t2-v1",24,22
+"FIB00757","t4-u1","FIB193","Clinic Visit 1","T4","FIB193_B1_T4","FIB193_U1_T4","","Yacon","V1","t4-v1",24,22
+"FIB00759","t6-u1","FIB193","Clinic Visit 1","T6","FIB193_B1_T6","FIB193_U1_T6","","Yacon","V1","t6-v1",24,22
+"FIB00762","t8-u1","FIB193","Clinic Visit 1","T8","FIB193_B1_T8","FIB193_U1_T8","","Yacon","V1","t8-v1",24,22
+"FIB00766","t0-u1","FIB202","Clinic Visit 1","T0","FIB202_B1_T0","FIB202_U1_T0","","Globe Artichoke","V1","t0-v1",21,42
+"FIB00804","t0-u2","FIB202","Clinic Visit 2","T0","FIB202_B2_T0","FIB202_U2_T0","","Jerusalem Artichoke","V2","t0-v2",21,42
+"FIB00862","t0-u3","FIB202","Clinic Visit 3","T0","FIB202_B3_T0","FIB202_U3_T0","","Yacon","V3","t0-v3",21,42
+"FIB01041","t0-u4","FIB202","Clinic Visit 4","T0","FIB202_B4_T0","FIB202_U4_T0","","Watermelon","V4","t0-v4",21,42
+"FIB01123","t0-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00770","t2-u1","FIB202","Clinic Visit 1","T2","FIB202_B1_T2","FIB202_U1_T2","","Globe Artichoke","V1","t2-v1",21,42
+"FIB00807","t2-u2","FIB202","Clinic Visit 2","T2","FIB202_B2_T2","FIB202_U2_T2","","Jerusalem Artichoke","V2","t2-v2",21,42
+"FIB00866","t2-u3","FIB202","Clinic Visit 3","T2","FIB202_B3_T2","FIB202_U3_T2","","Yacon","V3","t2-v3",21,42
+"FIB01046","t2-u4","FIB202","Clinic Visit 4","T2","FIB202_B4_T2","FIB202_U4_T2","","Watermelon","V4","t2-v4",21,42
+"FIB01124","t2-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00774","t4-u1","FIB202","Clinic Visit 1","T4","FIB202_B1_T4","FIB202_U1_T4","","Globe Artichoke","V1","t4-v1",21,42
+"FIB00810","t4-u2","FIB202","Clinic Visit 2","T4","FIB202_B2_T4","FIB202_U2_T4","","Jerusalem Artichoke","V2","t4-v2",21,42
+"FIB00870","t4-u3","FIB202","Clinic Visit 3","T4","FIB202_B3_T4","FIB202_U3_T4","","Yacon","V3","t4-v3",21,42
+"FIB01051","t4-u4","FIB202","Clinic Visit 4","T4","FIB202_B4_T4","FIB202_U4_T4","","Watermelon","V4","t4-v4",21,42
+"FIB01125","t4-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00777","t6-u1","FIB202","Clinic Visit 1","T6","FIB202_B1_T6","FIB202_U1_T6","","Globe Artichoke","V1","t6-v1",21,42
+"FIB00813","t6-u2","FIB202","Clinic Visit 2","T6","FIB202_B2_T6","FIB202_U2_T6","","Jerusalem Artichoke","V2","t6-v2",21,42
+"FIB00874","t6-u3","FIB202","Clinic Visit 3","T6","FIB202_B3_T6","FIB202_U3_T6","","Yacon","V3","t6-v3",21,42
+"FIB01056","t6-u4","FIB202","Clinic Visit 4","T6","FIB202_B4_T6","FIB202_U4_T6","","Watermelon","V4","t6-v4",21,42
+"FIB01126","t6-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00781","t8-u1","FIB202","Clinic Visit 1","T8","FIB202_B1_T8","FIB202_U1_T8","","Globe Artichoke","V1","t8-v1",21,42
+"FIB00816","t8-u2","FIB202","Clinic Visit 2","T8","FIB202_B2_T8","FIB202_U2_T8","","Jerusalem Artichoke","V2","t8-v2",21,42
+"FIB00878","t8-u3","FIB202","Clinic Visit 3","T8","FIB202_B3_T8","FIB202_U3_T8","","Yacon","V3","t8-v3",21,42
+"FIB01061","t8-u4","FIB202","Clinic Visit 4","T8","FIB202_B4_T8","FIB202_U4_T8","","Watermelon","V4","t8-v4",21,42
+"FIB01127","t8-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00764","t0-u1","FIB207","Clinic Visit 1","T0","FIB207_B1_T0","FIB207_U1_T0","","Elephant Garlic","V1","t0-v1",23,37
+"FIB00805","t0-u2","FIB207","Clinic Visit 2","T0","FIB207_B2_T0","FIB207_U2_T0","","Globe Artichoke","V2","t0-v2",23,37
+"FIB00907","t0-u3","FIB207","Clinic Visit 3","T0","FIB207_B3_T0","FIB207_U3_T0","","Jerusalem Artichoke","V3","t0-v3",23,37
+"FIB00975","t0-u4","FIB207","Clinic Visit 4","T0","FIB207_B4_T0","FIB207_U4_T0","","Apple","V4","t0-v4",23,37
+"FIB01042","t0-u5","FIB207","Clinic Visit 5","T0","FIB207_B5_T0","FIB207_U5_T0","","Watermelon","V5","t0-v5",23,37
+"FIB01153","t0-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00768","t2-u1","FIB207","Clinic Visit 1","T2","FIB207_B1_T2","FIB207_U1_T2","","Elephant Garlic","V1","t2-v1",23,37
+"FIB00808","t2-u2","FIB207","Clinic Visit 2","T2","FIB207_B2_T2","FIB207_U2_T2","","Globe Artichoke","V2","t2-v2",23,37
+"FIB00908","t2-u3","FIB207","Clinic Visit 3","T2","FIB207_B3_T2","FIB207_U3_T2","","Jerusalem Artichoke","V3","t2-v3",23,37
+"FIB00978","t2-u4","FIB207","Clinic Visit 4","T2","FIB207_B4_T2","FIB207_U4_T2","","Apple","V4","t2-v4",23,37
+"FIB01047","t2-u5","FIB207","Clinic Visit 5","T2","FIB207_B5_T2","FIB207_U5_T2","","Watermelon","V5","t2-v5",23,37
+"FIB01155","t2-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00772","t4-u1","FIB207","Clinic Visit 1","T4","FIB207_B1_T4","FIB207_U1_T4","","Elephant Garlic","V1","t4-v1",23,37
+"FIB00811","t4-u2","FIB207","Clinic Visit 2","T4","FIB207_B2_T4","FIB207_U2_T4","","Globe Artichoke","V2","t4-v2",23,37
+"FIB00916","t4-u3","FIB207","Clinic Visit 3","T4","FIB207_B3_T4","FIB207_U3_T4","","Jerusalem Artichoke","V3","t4-v3",23,37
+"FIB00981","t4-u4","FIB207","Clinic Visit 4","T4","FIB207_B4_T4","FIB207_U4_T4","","Apple","V4","t4-v4",23,37
+"FIB01052","t4-u5","FIB207","Clinic Visit 5","T4","FIB207_B5_T4","FIB207_U5_T4","","Watermelon","V5","t4-v5",23,37
+"FIB01157","t4-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00775","t6-u1","FIB207","Clinic Visit 1","T6","FIB207_B1_T6","FIB207_U1_T6","","Elephant Garlic","V1","t6-v1",23,37
+"FIB00814","t6-u2","FIB207","Clinic Visit 2","T6","FIB207_B2_T6","FIB207_U2_T6","","Globe Artichoke","V2","t6-v2",23,37
+"FIB00934","t6-u3","FIB207","Clinic Visit 3","T6","FIB207_B3_T6","FIB207_U3_T6","","Jerusalem Artichoke","V3","t6-v3",23,37
+"FIB00984","t6-u4","FIB207","Clinic Visit 4","T6","FIB207_B4_T6","FIB207_U4_T6","","Apple","V4","t6-v4",23,37
+"FIB01057","t6-u5","FIB207","Clinic Visit 5","T6","FIB207_B5_T6","FIB207_U5_T6","","Watermelon","V5","t6-v5",23,37
+"FIB01159","t6-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00779","t8-u1","FIB207","Clinic Visit 1","T8","FIB207_B1_T8","FIB207_U1_T8","","Elephant Garlic","V1","t8-v1",23,37
+"FIB00817","t8-u2","FIB207","Clinic Visit 2","T8","FIB207_B2_T8","FIB207_U2_T8","","Globe Artichoke","V2","t8-v2",23,37
+"FIB00946","t8-u3","FIB207","Clinic Visit 3","T8","FIB207_B3_T8","FIB207_U3_T8","","Jerusalem Artichoke","V3","t8-v3",23,37
+"FIB00987","t8-u4","FIB207","Clinic Visit 4","T8","FIB207_B4_T8","FIB207_U4_T8","","Apple","V4","t8-v4",23,37
+"FIB01062","t8-u5","FIB207","Clinic Visit 5","T8","FIB207_B5_T8","FIB207_U5_T8","","Watermelon","V5","t8-v5",23,37
+"FIB01161","t8-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00882","t0-u1","FIB212","Clinic Visit 1","T0","FIB212_B1_T0","FIB212_U1_T0","FIB212_F1_T0","Yacon","V1","t0-v1",30,61
+"FIB00885","t2-u1","FIB212","Clinic Visit 1","T2","FIB212_B1_T2","FIB212_U1_T2","","Yacon","V1","t2-v1",30,61
+"FIB00889","t4-u1","FIB212","Clinic Visit 1","T4","FIB212_B1_T4","FIB212_U1_T4","","Yacon","V1","t4-v1",30,61
+"FIB00893","t6-u1","FIB212","Clinic Visit 1","T6","FIB212_B1_T6","FIB212_U1_T6","","Yacon","V1","t6-v1",30,61
+"FIB00897","t8-u1","FIB212","Clinic Visit 1","T8","FIB212_B1_T8","FIB212_U1_T8","","Yacon","V1","t8-v1",30,61
+"FIB00765","t0-u1","FIB220","Clinic Visit 1","T0","FIB220_B1_T0","FIB220_U1_T0","FIB220_F1_T0","Jerusalem Artichoke","V1","t0-v1",30,57
+"FIB00819","t0-u2","FIB220","Clinic Visit 2","T0","FIB220_B2_T0","FIB220_U2_T0","","Elephant Garlic","V2","t0-v2",30,57
+"FIB01068","t0-u3","FIB220","Clinic Visit 3","T0","FIB220_B3_T0","FIB220_U3_T0","","Orange","V3","t0-v3",30,57
+"FIB01154","t0-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01077","t1-u3","FIB220","Clinic Visit 3","T1","FIB220_B3_T1","FIB220_U3_T1","","Orange","V3","t1-v3",30,57
+"FIB00769","t2-u1","FIB220","Clinic Visit 1","T2","FIB220_B1_T2","FIB220_U1_T2","","Jerusalem Artichoke","V1","t2-v1",30,57
+"FIB00823","t2-u2","FIB220","Clinic Visit 2","T2","FIB220_B2_T2","FIB220_U2_T2","","Elephant Garlic","V2","t2-v2",30,57
+"FIB01073","t2-u3","FIB220","Clinic Visit 3","T2","FIB220_B3_T2","FIB220_U3_T2","","Orange","V3","t2-v3",30,57
+"FIB01156","t2-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00773","t4-u1","FIB220","Clinic Visit 1","T4","FIB220_B1_T4","FIB220_U1_T4","","Jerusalem Artichoke","V1","t4-v1",30,57
+"FIB00828","t4-u2","FIB220","Clinic Visit 2","T4","FIB220_B2_T4","FIB220_U2_T4","","Elephant Garlic","V2","t4-v2",30,57
+"FIB01080","t4-u3","FIB220","Clinic Visit 3","T4","FIB220_B3_T4","FIB220_U3_T4","","Orange","V3","t4-v3",30,57
+"FIB01158","t4-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00776","t6-u1","FIB220","Clinic Visit 1","T6","FIB220_B1_T6","FIB220_U1_T6","","Jerusalem Artichoke","V1","t6-v1",30,57
+"FIB00833","t6-u2","FIB220","Clinic Visit 2","T6","FIB220_B2_T6","FIB220_U2_T6","","Elephant Garlic","V2","t6-v2",30,57
+"FIB01085","t6-u3","FIB220","Clinic Visit 3","T6","FIB220_B3_T6","FIB220_U3_T6","","Orange","V3","t6-v3",30,57
+"FIB01160","t6-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00780","t8-u1","FIB220","Clinic Visit 1","T8","FIB220_B1_T8","FIB220_U1_T8","","Jerusalem Artichoke","V1","t8-v1",30,57
+"FIB00838","t8-u2","FIB220","Clinic Visit 2","T8","FIB220_B2_T8","FIB220_U2_T8","","Elephant Garlic","V2","t8-v2",30,57
+"FIB01090","t8-u3","FIB220","Clinic Visit 3","T8","FIB220_B3_T8","FIB220_U3_T8","","Orange","V3","t8-v3",30,57
+"FIB01162","t8-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00751","t0-u1","FIB234","Clinic Visit 1","T0","FIB234_B1_T0","FIB234_U1_T0","","Jerusalem Artichoke","V1","t0-v1",27,35
+"FIB00754","t2-u1","FIB234","Clinic Visit 1","T2","FIB234_B1_T2","FIB234_U1_T2","","Jerusalem Artichoke","V1","t2-v1",27,35
+"FIB00755","t4-u1","FIB234","Clinic Visit 1","T4","FIB234_B1_T4","FIB234_U1_T4","","Jerusalem Artichoke","V1","t4-v1",27,35
+"FIB00758","t6-u1","FIB234","Clinic Visit 1","T6","FIB234_B1_T6","FIB234_U1_T6","","Jerusalem Artichoke","V1","t6-v1",27,35
+"FIB00763","t8-u1","FIB234","Clinic Visit 1","T8","FIB234_B1_T8","FIB234_U1_T8","","Jerusalem Artichoke","V1","t8-v1",27,35
+"FIB00915","t2-u1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00784","t0-u1","FIB256","Clinic Visit 1","T0","FIB256_B1_T0","FIB256_U1_T0","","Elephant Garlic","V1","t0-v1",28,66
+"FIB00844","t0-u2","FIB256","Clinic Visit 2","T0","FIB256_B2_T0","FIB256_U2_T0","","Yacon","V2","t0-v2",28,66
+"FIB00883","t0-u3","FIB256","Clinic Visit 3","T0","FIB256_B3_T0","FIB256_U3_T0","","Jerusalem Artichoke","V3","t0-v3",28,66
+"FIB00973","t0-u4","FIB256","Clinic Visit 4","T0","FIB256_B4_T0","FIB256_U4_T0","","Globe Artichoke","V4","t0-v4",28,66
+"FIB01094","t0-u5","FIB256","Clinic Visit 5","T0","FIB256_B5_T0","FIB256_U5_T0","","Tomato","V5","t0-v5",28,66
+"FIB00788","t2-u1","FIB256","Clinic Visit 1","T2","FIB256_B1_T2","FIB256_U1_T2","","Elephant Garlic","V1","t2-v1",28,66
+"FIB00848","t2-u2","FIB256","Clinic Visit 2","T2","FIB256_B2_T2","FIB256_U2_T2","","Yacon","V2","t2-v2",28,66
+"FIB00886","t2-u3","FIB256","Clinic Visit 3","T2","FIB256_B3_T3","FIB256_U3_T2","","Jerusalem Artichoke","V3","t2-v3",28,66
+"FIB00976","t2-u4","FIB256","Clinic Visit 4","T2","FIB256_B4_T2","FIB256_U4_T2","","Globe Artichoke","V4","t2-v4",28,66
+"FIB01100","t2-u5","FIB256","Clinic Visit 5","T2","FIB256_B5_T2","FIB256_U5_T2","","Tomato","V5","t2-v5",28,66
+"FIB00792","t4-u1","FIB256","Clinic Visit 1","T4","FIB256_B1_T4","FIB256_U1_T4","","Elephant Garlic","V1","t4-v1",28,66
+"FIB00852","t4-u2","FIB256","Clinic Visit 2","T4","FIB256_B2_T4","FIB256_U2_T4","","Yacon","V2","t4-v2",28,66
+"FIB00890","t4-u3","FIB256","Clinic Visit 3","T4","FIB256_B3_T4","FIB256_U3_T4","","Jerusalem Artichoke","V3","t4-v3",28,66
+"FIB00979","t4-u4","FIB256","Clinic Visit 4","T4","FIB256_B4_T4","FIB256_U4_T4","","Globe Artichoke","V4","t4-v4",28,66
+"FIB01106","t4-u5","FIB256","Clinic Visit 5","T4","FIB256_B5_T4","FIB256_U5_T4","","Tomato","V5","t4-v5",28,66
+"FIB00796","t6-u1","FIB256","Clinic Visit 1","T6","FIB256_B1_T6","FIB256_U1_T6","","Elephant Garlic","V1","t6-v1",28,66
+"FIB00856","t6-u2","FIB256","Clinic Visit 2","T6","FIB256_B2_T6","FIB256_U2_T6","","Yacon","V2","t6-v2",28,66
+"FIB00894","t6-u3","FIB256","Clinic Visit 3","T6","FIB256_B3_T6","FIB256_U3_T6","","Jerusalem Artichoke","V3","t6-v3",28,66
+"FIB00982","t6-u4","FIB256","Clinic Visit 4","T6","FIB256_B4_T6","FIB256_U4_T6","","Globe Artichoke","V4","t6-v4",28,66
+"FIB01112","t6-u5","FIB256","Clinic Visit 5","T6","FIB256_B5_T6","FIB256_U5_T6","","Tomato","V5","t6-v5",28,66
+"FIB00800","t8-u1","FIB256","Clinic Visit 1","T8","FIB256_B1_T8","FIB256_U1_T8","","Elephant Garlic","V1","t8-v1",28,66
+"FIB00860","t8-u2","FIB256","Clinic Visit 2","T8","FIB256_B2_T8","FIB256_U2_T8","","Yacon","V2","t8-v2",28,66
+"FIB00898","t8-u3","FIB256","Clinic Visit 3","T8","FIB256_B3_T8","FIB256_U3_T8","","Jerusalem Artichoke","V3","t8-v3",28,66
+"FIB00985","t8-u4","FIB256","Clinic Visit 4","T8","FIB256_B4_T8","FIB256_U4_T8","","Globe Artichoke","V4","t8-v4",28,66
+"FIB01118","t8-u5","FIB256","Clinic Visit 5","T8","FIB256_B5_T8","FIB256_U5_T8","","Tomato","V5","t8-v5",28,66
+"FIB00785","t0-u1","FIB274","Clinic Visit 1","T0","FIB274_B1_T0","FIB274_U1_T0","FIB274_F1_T0","Apple","V1","t0-v1",20,31
+"FIB00903","t0-u2","FIB274","Clinic Visit 2","T0","FIB274_B2_T0","FIB274_U2_T0","","Yacon","V2","t0-v2",20,31
+"FIB01069","t0-u3","FIB274","Clinic Visit 3","T0","FIB274_B3_T0","FIB274_U3_T0","","Watermelon","V3","t0-v3",20,31
+"FIB00789","t2-u1","FIB274","Clinic Visit 1","T2","FIB274_B1_T2","FIB274_U1_T2","","Apple","V1","t2-v1",20,31
+"FIB00913","t2-u2","FIB274","Clinic Visit 2","T2","FIB274_B2_T2","FIB274_U2_T2","","Yacon","V2","t2-v2",20,31
+"FIB01074","t2-u3","FIB274","Clinic Visit 3","T2","FIB274_B3_T2","FIB274_U3_T2","","Watermelon","V3","t2-v3",20,31
+"FIB00793","t4-u1","FIB274","Clinic Visit 1","T4","FIB274_B1_T4","FIB274_U1_T4","","Apple","V1","t4-v1",20,31
+"FIB00921","t4-u2","FIB274","Clinic Visit 2","T4","FIB274_B2_T4","FIB274_U2_T4","","Yacon","V2","t4-v2",20,31
+"FIB01081","t4-u3","FIB274","Clinic Visit 3","T4","FIB274_B3_T4","FIB274_U3_T4","","Watermelon","V3","t4-v3",20,31
+"FIB00797","t6-u1","FIB274","Clinic Visit 1","T6","FIB274_B1_T6","FIB274_U1_T6","","Apple","V1","t6-v1",20,31
+"FIB00938","t6-u2","FIB274","Clinic Visit 2","T6","FIB274_B2_T6","FIB274_U2_T6","","Yacon","V2","t6-v2",20,31
+"FIB01086","t6-u3","FIB274","Clinic Visit 3","T6","FIB274_B3_T6","FIB274_U3_T6","","Watermelon","V3","t6-v3",20,31
+"FIB00801","t8-u1","FIB274","Clinic Visit 1","T8","FIB274_B1_T8","FIB274_U1_T8","","Apple","V1","t8-v1",20,31
+"FIB00942","t8-u2","FIB274","Clinic Visit 2","T8","FIB274_B2_T8","FIB274_U2_T8","","Yacon","V2","t8-v2",20,31
+"FIB01091","t8-u3","FIB274","Clinic Visit 3","T8","FIB274_B3_T8","FIB274_U3_T8","","Watermelon","V3","t8-v3",20,31
+"FIB00820","t0-u1","FIB284","Clinic Visit 1","T0","FIB284_B1_T0","FIB284_U1_T0","","Apple","V1","t0-v1",26,61
+"FIB01003","t0-u2","FIB284","Clinic Visit 2","T0","FIB284_B2_T0","FIB284_U2_T0","FIB284_F2_T0","Tomato","V2","t0-v2",26,61
+"FIB01165","t0-u3","FIB284","Clinic Visit 3","T0","FIB284_B3_T0","FIB284_U3_T0","","Orange","V3","t0-v3",26,61
+"FIB01129","t0-u4","FIB284","Clinic Visit 4","T0","FIB284_B4_T0","FIB284_U4_T0","FIB284_F4_T0","Watermelon","V4","t0-v4",26,61
+"FIB00824","t2-u1","FIB284","Clinic Visit 1","T2","FIB284_B1_T2","FIB284_U1_T2","","Apple","V1","t2-v1",26,61
+"FIB01004","t2-u2","FIB284","Clinic Visit 2","T2","FIB284_B2_T2","FIB284_U2_T2","","Tomato","V2","t2-v2",26,61
+"FIB01168","t2-u3","FIB284","Clinic Visit 3","T2","FIB284_B3_T2","FIB284_U3_T2","","Orange","V3","t2-v3",26,61
+"FIB01134","t2-u4","FIB284","Clinic Visit 4","T2","FIB284_B4_T2","FIB284_U4_T2","","Watermelon","V4","t2-v4",26,61
+"FIB00829","t4-u1","FIB284","Clinic Visit 1","T4","FIB284_B1_T4","FIB284_U1_T4","","Apple","V1","t4-v1",26,61
+"FIB01005","t4-u2","FIB284","Clinic Visit 2","T4","FIB284_B2_T4","FIB284_U2_T4","","Tomato","V2","t4-v2",26,61
+"FIB01171","t4-u3","FIB284","Clinic Visit 3","T4","FIB284_B3_T4","FIB284_U3_T4","","Orange","V3","t4-v3",26,61
+"FIB01139","t4-u4","FIB284","Clinic Visit 4","T4","FIB284_B4_T4","FIB284_U4_T4","","Watermelon","V4","t4-v4",26,61
+"FIB00834","t6-u1","FIB284","Clinic Visit 1","T6","FIB284_B1_T6","FIB284_U1_T6","","Apple","V1","t6-v1",26,61
+"FIB01006","t6-u2","FIB284","Clinic Visit 2","T6","FIB284_B2_T6","FIB284_U2_T6","","Tomato","V2","t6-v2",26,61
+"FIB01174","t6-u3","FIB284","Clinic Visit 3","T6","FIB284_B3_T6","FIB284_U3_T6","","Orange","V3","t6-v3",26,61
+"FIB01144","t6-u4","FIB284","Clinic Visit 4","T6","FIB284_B4_T6","FIB284_U4_T6","","Watermelon","V4","t6-v4",26,61
+"FIB00839","t8-u1","FIB284","Clinic Visit 1","T8","FIB284_B1_T8","FIB284_U1_T8","","Apple","V1","t8-v1",26,61
+"FIB01007","t8-u2","FIB284","Clinic Visit 2","T8","FIB284_B2_T8","FIB284_U2_T8","","Tomato","V2","t8-v2",26,61
+"FIB01177","t8-u3","FIB284","Clinic Visit 3","T8","FIB284_B3_T8","FIB284_U3_T8","","Orange","V3","t8-v3",26,61
+"FIB01149","t8-u4","FIB284","Clinic Visit 4","T8","FIB284_B4_T8","FIB284_U4_T8","","Watermelon","V4","t8-v4",26,61
+"FIB00786","t0-u1","FIB293","Clinic Visit 1","T0","FIB293_B1_T0","FIB293_U1_T0","","Jerusalem Artichoke","V1","t0-v1",23,37
+"FIB00790","t2-u1","FIB293","Clinic Visit 1","T2","FIB293_B1_T2","FIB293_U1_T2","","Jerusalem Artichoke","V1","t2-v1",23,37
+"FIB00794","t4-u1","FIB293","Clinic Visit 1","T4","FIB293_B1_T4","FIB293_U1_T4","","Jerusalem Artichoke","V1","t4-v1",23,37
+"FIB00798","t6-u1","FIB293","Clinic Visit 1","T6","FIB293_B1_T6","FIB293_U1_T6","","Jerusalem Artichoke","V1","t6-v1",23,37
+"FIB00802","t8-u1","FIB293","Clinic Visit 1","T8","FIB293_B1_T8","FIB293_U1_T8","","Jerusalem Artichoke","V1","t8-v1",23,37
+"FIB00821","t0-u1","FIB297","Clinic Visit 1","T0","FIB297_B1_T0","FIB297_U1_T0","","Globe Artichoke","V1","t0-v1",25,31
+"FIB00863","t0-u2","FIB297","Clinic Visit 2","T0","FIB297_B2_T0","FIB297_U2_T0","","Jerusalem Artichoke","V2","t0-v2",25,31
+"FIB00950","t0-u3","FIB297","Clinic Visit 3","T0","FIB297_B3_T0","FIB297_U3_T0","","Elephant Garlic","V3","t0-v3",25,31
+"FIB01095","t0-u4","FIB297","Clinic Visit 4","T0","FIB297_B4_T0","FIB297_U4_T0","","Tomato","V4","t0-v4",25,31
+"FIB00825","t2-u1","FIB297","Clinic Visit 1","T2","FIB297_B1_T2","FIB297_U1_T2","","Globe Artichoke","V1","t2-v1",25,31
+"FIB00867","t2-u2","FIB297","Clinic Visit 2","T2","FIB297_B2_T2","FIB297_U2_T2","","Jerusalem Artichoke","V2","t2-v2",25,31
+"FIB00955","t2-u3","FIB297","Clinic Visit 3","T2","FIB297_B3_T2","FIB297_U3_T2","","Elephant Garlic","V3","t2-v3",25,31
+"FIB01101","t2-u4","FIB297","Clinic Visit 4","T2","FIB297_B4_T2","FIB297_U4_T2","","Tomato","V4","t2-v4",25,31
+"FIB00830","t4-u1","FIB297","Clinic Visit 1","T4","FIB297_B1_T4","FIB297_U1_T4","","Globe Artichoke","V1","t4-v1",25,31
+"FIB00871","t4-u2","FIB297","Clinic Visit 2","T4","FIB297_B2_T4","FIB297_U2_T4","","Jerusalem Artichoke","V2","t4-v2",25,31
+"FIB00960","t4-u3","FIB297","Clinic Visit 3","T4","FIB297_B3_T4","FIB297_U3_T4","","Elephant Garlic","V3","t4-v3",25,31
+"FIB01107","t4-u4","FIB297","Clinic Visit 4","T4","FIB297_B4_T4","FIB297_U4_T4","","Tomato","V4","t4-v4",25,31
+"FIB00835","t6-u1","FIB297","Clinic Visit 1","T6","FIB297_B1_T6","FIB297_U1_T6","","Globe Artichoke","V1","t6-v1",25,31
+"FIB00875","t6-u2","FIB297","Clinic Visit 2","T6","FIB297_B2_T6","FIB297_U2_T6","","Jerusalem Artichoke","V2","t6-v2",25,31
+"FIB00965","t6-u3","FIB297","Clinic Visit 3","T6","FIB297_B3_T6","FIB297_U3_T6","","Elephant Garlic","V3","t6-v3",25,31
+"FIB01113","t6-u4","FIB297","Clinic Visit 4","T6","FIB297_B4_T6","FIB297_U4_T6","","Tomato","V4","t6-v4",25,31
+"FIB00840","t8-u1","FIB297","Clinic Visit 1","T8","FIB297_B1_T8","FIB297_U1_T8","","Globe Artichoke","V1","t8-v1",25,31
+"FIB00879","t8-u2","FIB297","Clinic Visit 2","T8","FIB297_B2_T8","FIB297_U2_T8","","Jerusalem Artichoke","V2","t8-v2",25,31
+"FIB00970","t8-u3","FIB297","Clinic Visit 3","T8","FIB297_B3_T8","FIB297_U3_T8","","Elephant Garlic","V3","t8-v3",25,31
+"FIB01119","t8-u4","FIB297","Clinic Visit 4","T8","FIB297_B4_T8","FIB297_U4_T8","","Tomato","V4","t8-v4",25,31
+"FIB00845","t0-u1","FIB300","Clinic Visit 1","T0","FIB300_B1_T0","FIB300_U1_T0","","Jerusalem Artichoke","V1","t0-v1",27,48
+"FIB00849","t2-u1","FIB300","Clinic Visit 1","T2","FIB300_B1_T2","FIB300_U1_T2","","Jerusalem Artichoke","V1","t2-v1",27,48
+"FIB00853","t4-u1","FIB300","Clinic Visit 1","T4","FIB300_B1_T4","FIB300_U1_T4","","Jerusalem Artichoke","V1","t4-v1",27,48
+"FIB00857","t6-u1","FIB300","Clinic Visit 1","T6","FIB300_B1_T6","FIB300_U1_T6","","Jerusalem Artichoke","V1","t6-v1",27,48
+"FIB00861","t8-u1","FIB300","Clinic Visit 1","T8","FIB300_B1_T8","FIB300_U1_T8","","Jerusalem Artichoke","V1","t8-v1",27,48
+"FIB00905","t0-u1","FIB329","Clinic Visit 1","T0","FIB329_B1_T0","FIB329_U1_T0","","Yacon","V1","t0-v1",33,66
+"FIB00989","t0-u2","FIB329","Clinic Visit 2","T0","FIB329_B2_T0","FIB329_U2_T0","","Apple","V2","t0-v2",33,66
+"FIB01096","t0-u3","FIB329","Clinic Visit 3","T0","FIB329_B3_T0","FIB329_U3_T0","","Watermelon","V3","t0-v3",33,66
+"FIB00992","t2-u2","FIB329","Clinic Visit 2","T2","FIB329_B2_T2","FIB329_U2_T2","","Apple","V2","t2-v2",33,66
+"FIB01182","t2-u2","FIB329","Clinic Visit 2","T2","FIB329_B2_T2","FIB329_U2_T2","","Apple","V2","t2-v2",33,66
+"FIB01102","t2-u3","FIB329","Clinic Visit 3","T2","FIB329_B3_T2","FIB329_U3_T2","","Watermelon","V3","t2-v3",33,66
+"FIB00923","t4-u1","FIB329","Clinic Visit 1","T4","FIB329_B1_T4","FIB329_U1_T4","","Yacon","V1","t4-v1",33,66
+"FIB00995","t4-u2","FIB329","Clinic Visit 2","T4","FIB329_B2_T4","FIB329_U2_T4","","Apple","V2","t4-v2",33,66
+"FIB01108","t4-u3","FIB329","Clinic Visit 3","T4","FIB329_B3_T4","FIB329_U3_T4","","Watermelon","V3","t4-v3",33,66
+"FIB00939","t6-u1","FIB329","Clinic Visit 1","T6","FIB329_B1_T6","FIB329_U1_T6","","Yacon","V1","t6-v1",33,66
+"FIB00998","t6-u2","FIB329","Clinic Visit 2","T6","FIB329_B2_T6","FIB329_U2_T6","","Apple","V2","t6-v2",33,66
+"FIB01114","t6-u3","FIB329","Clinic Visit 3","T6","FIB329_B3_T6","FIB329_U3_T6","","Watermelon","V3","t6-v3",33,66
+"FIB00947","t8-u1","FIB329","Clinic Visit 1","T8","FIB329_B1_T8","FIB329_U1_T8","","Yacon","V1","t8-v1",33,66
+"FIB01001","t8-u2","FIB329","Clinic Visit 2","T8","FIB329_B2_T8","FIB329_U2_T8","","Apple","V2","t8-v2",33,66
+"FIB01120","t8-u3","FIB329","Clinic Visit 3","T8","FIB329_B3_T8","FIB329_U3_T8","","Watermelon","V3","t8-v3",33,66
+"FIB00822","t0-u1","FIB332","Clinic Visit 1","T0","FIB332_B1_T0","FIB332_U1_T0","","Yacon","V1","t0-v1",22,36
+"FIB00864","t0-u2","FIB332","Clinic Visit 2","T0","FIB332_B2_T0","FIB332_U2_T0","","Elephant Garlic","V2","t0-v2",22,36
+"FIB00826","t2-u1","FIB332","Clinic Visit 1","T2","FIB332_B1_T2","FIB332_U1_T2","","Yacon","V1","t2-v1",22,36
+"FIB00868","t2-u2","FIB332","Clinic Visit 2","T2","FIB332_B2_T2","FIB332_U2_T2","","Elephant Garlic","V2","t2-v2",22,36
+"FIB00831","t4-u1","FIB332","Clinic Visit 1","T4","FIB332_B1_T4","FIB332_U1_T4","","Yacon","V1","t4-v1",22,36
+"FIB00872","t4-u2","FIB332","Clinic Visit 2","T4","FIB332_B2_T4","FIB332_U2_T4","","Elephant Garlic","V2","t4-v2",22,36
+"FIB00836","t6-u1","FIB332","Clinic Visit 1","T6","FIB332_B1_T6","FIB332_U1_T6","","Yacon","V1","t6-v1",22,36
+"FIB00876","t6-u2","FIB332","Clinic Visit 2","T6","FIB332_B2_T6","FIB332_U2_T6","","Elephant Garlic","V2","t6-v2",22,36
+"FIB00841","t8-u1","FIB332","Clinic Visit 1","T8","FIB332_B1_T8","FIB332_U1_T8","","Yacon","V1","t8-v1",22,36
+"FIB00880","t8-u2","FIB332","Clinic Visit 2","T8","FIB332_B2_T8","FIB332_U2_T8","","Elephant Garlic","V2","t8-v2",22,36
+"FIB00988","t0-u1","FIB337","Clinic Visit 1","T0","FIB337_B1_T0","FIB337_U1_T0","","Jerusalem Artichoke","V1","t0-v1",20,19
+"FIB00991","t2-u1","FIB337","Clinic Visit 1","T2","FIB337_B1_T2","FIB337_U1_T2","","Jerusalem Artichoke","V1","t2-v1",20,19
+"FIB00994","t4-u1","FIB337","Clinic Visit 1","T4","FIB337_B1_T4","FIB337_U1_T4","","Jerusalem Artichoke","V1","t4-v1",20,19
+"FIB00997","t6-u1","FIB337","Clinic Visit 1","T6","FIB337_B1_T6","FIB337_U1_T6","","Jerusalem Artichoke","V1","t6-v1",20,19
+"FIB01000","t8-u1","FIB337","Clinic Visit 1","T8","FIB337_B1_T8","FIB337_U1_T8","","Jerusalem Artichoke","V1","t8-v1",20,19
+"FIB00865","t0-u1","FIB364","Clinic Visit 1","T0","FIB364_B1_T0","FIB364_U1_T0","","Apple","V1","t0-v1",21,31
+"FIB00869","t2-u1","FIB364","Clinic Visit 1","T2","FIB364_B1_T2","FIB364_U1_T2","","Apple","V1","t2-v1",21,31
+"FIB00873","t4-u1","FIB364","Clinic Visit 1","T4","FIB364_B1_T4","FIB364_U1_T4","","Apple","V1","t4-v1",21,31
+"FIB00877","t6-u1","FIB364","Clinic Visit 1","T6","FIB364_B1_T6","FIB364_U1_T6","","Apple","V1","t6-v1",21,31
+"FIB00881","t8-u1","FIB364","Clinic Visit 1","T8","FIB364_B1_T8","FIB364_U1_T8","","Apple","V1","t8-v1",21,31
+"FIB00901","t0-u1","FIB380","Clinic Visit 1","T0","FIB380_B1_T0","FIB380_U1_T0","","Elephant Garlic","V1","t0-v1",22,34
+"FIB00912","t2-u1","FIB380","Clinic Visit 1","T2","FIB380_B1_T2","FIB380_U1_T2","","Elephant Garlic","V1","t2-v1",22,34
+"FIB00917","t4-u1","FIB380","Clinic Visit 1","T4","FIB380_B1_T4","FIB380_U1_T4","","Elephant Garlic","V1","t4-v1",22,34
+"FIB00935","t6-u1","FIB380","Clinic Visit 1","T6","FIB380_B1_T6","FIB380_U1_T6","","Elephant Garlic","V1","t6-v1",22,34
+"FIB00944","t8-u1","FIB380","Clinic Visit 1","T8","FIB380_B1_T8","FIB380_U1_T8","","Elephant Garlic","V1","t8-v1",22,34
+"FIB01130","t0-u1","FIB426","Clinic Visit 1","T0","FIB426_B1_T0","FIB426_U1_T0","FIB426_F1_T0","Orange","V1","t0-v1",21,26
+"FIB01135","t2-u4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01140","t4-u4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01145","t6-u4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01150","t8-u4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00974","t0-u1","FIB439","Clinic Visit 1","T0","FIB439_B1_T0","FIB439_U1_T0","FIB439_F1_T0","Elephant Garlic","V1","t0-v1",26,63
+"FIB01043","t0-u2","FIB439","Clinic Visit 2","T0","FIB439_B2_T0","FIB439_U2_T0","","Orange","V2","t0-v2",26,63
+"FIB01097","t0-u3","FIB439","Clinic Visit 3","T0","FIB439_B3_T0","FIB439_U3_T0","","Tomato","V3","t0-v3",26,63
+"FIB00977","t2-u1","FIB439","Clinic Visit 1","T2","FIB439_B1_T2","FIB439_U1_T2","","Elephant Garlic","V1","t2-v1",26,63
+"FIB01048","t2-u2","FIB439","Clinic Visit 2","T2","FIB439_B2_T2","FIB439_U2_T2","","Orange","V2","t2-v2",26,63
+"FIB01103","t2-u3","FIB439","Clinic Visit 3","T2","FIB439_B3_T2","FIB439_U3_T2","","Tomato","V3","t2-v3",26,63
+"FIB00980","t4-u1","FIB439","Clinic Visit 1","T4","FIB439_B1_T4","FIB439_U1_T4","","Elephant Garlic","V1","t4-v1",26,63
+"FIB01053","t4-u2","FIB439","Clinic Visit 2","T4","FIB439_B2_T4","FIB439_U2_T4","","Orange","V2","t4-v2",26,63
+"FIB01109","t4-u3","FIB439","Clinic Visit 3","T4","FIB439_B3_T4","FIB439_U3_T4","","Tomato","V3","t4-v3",26,63
+"FIB00983","t6-u1","FIB439","Clinic Visit 1","T6","FIB439_B1_T6","FIB439_U1_T6","","Elephant Garlic","V1","t6-v1",26,63
+"FIB01058","t6-u2","FIB439","Clinic Visit 2","T6","FIB439_B2_T6","FIB439_U2_T6","","Orange","V2","t6-v2",26,63
+"FIB01115","t6-u3","FIB439","Clinic Visit 3","T6","FIB439_B3_T6","FIB439_U3_T6","","Tomato","V3","t6-v3",26,63
+"FIB00986","t8-u1","FIB439","Clinic Visit 1","T8","FIB439_B1_T8","FIB439_U1_T8","","Elephant Garlic","V1","t8-v1",26,63
+"FIB01063","t8-u2","FIB439","Clinic Visit 2","T8","FIB439_B2_T8","FIB439_U2_T8","","Orange","V2","t8-v2",26,63
+"FIB01121","t8-u3","FIB439","Clinic Visit 3","T8","FIB439_B3_T8","FIB439_U3_T8","","Tomato","V3","t8-v3",26,63
+"FIB00887","t2-u1","FIB453","Clinic Visit 1","T2","FIB453_B1_T2","FIB453_U1_T2","","Apple","V1","t2-v1",20,26
+"FIB00891","t4-u1","FIB453","Clinic Visit 1","T4","FIB453_B1_T4","FIB453_U1_T4","","Apple","V1","t4-v1",20,26
+"FIB00895","t6-u1","FIB453","Clinic Visit 1","T6","FIB453_B1_T6","FIB453_U1_T6","","Apple","V1","t6-v1",20,26
+"FIB00900","t0-u1","FIB455","Clinic Visit 1","T0","FIB455_B1_T0","FIB455_U1_T0","","Elephant Garlic","V1","t0-v1",24,70
+"FIB00990","t0-u2","FIB455","Clinic Visit 2","T0","FIB455_B2_T0","FIB455_U2_T0","","Apple","V2","t0-v2",24,70
+"FIB01019","t0-u3","FIB455","Clinic Visit 3","T0","FIB455_B3_T0","FIB455_U3_T0","","Watermelon","V3","t0-v3",24,70
+"FIB00911","t2-u1","FIB455","Clinic Visit 1","T2","FIB455_B1_T2","FIB455_U1_T2","","Elephant Garlic","V1","t2-v1",24,70
+"FIB00993","t2-u2","FIB455","Clinic Visit 2","T2","FIB455_B2_T2","FIB455_U2_T2","","Apple","V2","t2-v2",24,70
+"FIB01023","t2-u3","FIB455","Clinic Visit 3","T2","FIB455_B3_T2","FIB455_U3_T2","","Watermelon","V3","t2-v3",24,70
+"FIB00920","t4-u1","FIB455","Clinic Visit 1","T4","FIB455_B1_T4","FIB455_U1_T4","","Elephant Garlic","V1","t4-v1",24,70
+"FIB00996","t4-u2","FIB455","Clinic Visit 2","T4","FIB455_B2_T4","FIB455_U2_T4","","Apple","V2","t4-v2",24,70
+"FIB01027","t4-u3","FIB455","Clinic Visit 3","T4","FIB455_B3_T4","FIB455_U3_T4","","Watermelon","V3","t4-v3",24,70
+"FIB00937","t6-u1","FIB455","Clinic Visit 1","T6","FIB455_B1_T6","FIB455_U1_T6","","Elephant Garlic","V1","t6-v1",24,70
+"FIB00999","t6-u2","FIB455","Clinic Visit 2","T6","FIB455_B2_T6","FIB455_U2_T6","","Apple","V2","t6-v2",24,70
+"FIB01032","t6-u3","FIB455","Clinic Visit 3","T6","FIB455_B3_T6","FIB455_U3_T6","","Watermelon","V3","t6-v3",24,70
+"FIB00943","t8-u1","FIB455","Clinic Visit 1","T8","FIB455_B1_T8","FIB455_U1_T8","","Elephant Garlic","V1","t8-v1",24,70
+"FIB01002","t8-u2","FIB455","Clinic Visit 2","T8","FIB455_B2_T8","FIB455_U2_T8","","Apple","V2","t8-v2",24,70
+"FIB01037","t8-u3","FIB455","Clinic Visit 3","T8","FIB455_B3_T8","FIB455_U3_T8","","Watermelon","V3","t8-v3",24,70
+"FIB00884","t0-u1","FIB462","Clinic Visit 1","T0","FIB462_B1_T0","FIB462_U1_T0","","Elephant Garlic","V1","t0-v1",30,67
+"FIB00888","t2-u1","FIB462","Clinic Visit 1","T2","FIB462_B1_T2","FIB462_U1_T2","","Elephant Garlic","V1","t2-v1",30,67
+"FIB00892","t4-u1","FIB462","Clinic Visit 1","T4","FIB462_B1_T4","FIB462_U1_T4","","Elephant Garlic","V1","t4-v1",30,67
+"FIB00896","t6-u1","FIB462","Clinic Visit 1","T6","FIB462_B1_T6","FIB462_U1_T6","","Elephant Garlic","V1","t6-v1",30,67
+"FIB00899","t8-u1","FIB462","Clinic Visit 1","T8","FIB462_B1_T8","FIB462_U1_T8","","Elephant Garlic","V1","t8-v1",30,67
+"FIB00949","t0-u1","FIB479","Clinic Visit 1","T0","FIB479_B1_T0","FIB479_U1_T0","FIB479_F1_T0","Globe Artichoke","V1","t0-v1",22,31
+"FIB01044","t0-u2","FIB479","Clinic Visit 2","T0","FIB479_B2_T0","FIB479_U2_T0","","Tomato","V2","t0-v2",22,31
+"FIB00954","t2-u1","FIB479","Clinic Visit 1","T2","FIB479_B1_T2","FIB479_U1_T2","","Globe Artichoke","V1","t2-v1",22,31
+"FIB01049","t2-u2","FIB479","Clinic Visit 2","T2","FIB479_B2_T2","FIB479_U2_T2","","Tomato","V2","t2-v2",22,31
+"FIB00959","t4-u1","FIB479","Clinic Visit 1","T4","FIB479_B1_T4","FIB479_U1_T4","","Globe Artichoke","V1","t4-v1",22,31
+"FIB01054","t4-u2","FIB479","Clinic Visit 2","T4","FIB479_B2_T4","FIB479_U2_T4","","Tomato","V2","t4-v2",22,31
+"FIB00964","t6-u1","FIB479","Clinic Visit 1","T6","FIB479_B1_T6","FIB479_U1_T6","","Globe Artichoke","V1","t6-v1",22,31
+"FIB01059","t6-u2","FIB479","Clinic Visit 2","T6","FIB479_B2_T6","FIB479_U2_T6","","Tomato","V2","t6-v2",22,31
+"FIB00969","t8-u1","FIB479","Clinic Visit 1","T8","FIB479_B1_T8","FIB479_U1_T8","","Globe Artichoke","V1","t8-v1",22,31
+"FIB01064","t8-u2","FIB479","Clinic Visit 2","T8","FIB479_B2_T8","FIB479_U2_T8","","Tomato","V2","t8-v2",22,31
+"FIB01045","t0-u1","FIB538","Clinic Visit 1","T0","FIB538_B1_T0","FIB538_U1_T0","","Tomato","V1","t0-v1",24,69
+"FIB01050","t2-u1","FIB538","Clinic Visit 1","T2","FIB538_B1_T2","FIB538_U1_T2","","Tomato","V1","t2-v1",24,69
+"FIB01055","t4-u1","FIB538","Clinic Visit 1","T4","FIB538_B1_T4","FIB538_U1_T4","","Tomato","V1","t4-v1",24,69
+"FIB01060","t6-u1","FIB538","Clinic Visit 1","T6","FIB538_B1_T6","FIB538_U1_T6","","Tomato","V1","t6-v1",24,69
+"FIB01065","t8-u1","FIB538","Clinic Visit 1","T8","FIB538_B1_T8","FIB538_U1_T8","","Tomato","V1","t8-v1",24,69
+"FIB00951","t0-u1","FIB542","Clinic Visit 1","T0","FIB542_B1_T0","FIB542_U1_T0","","Apple","V1","t0-v1",26,36
+"FIB01070","t0-u2","FIB542","Clinic Visit 2","T0","FIB542_B2_T0","FIB542_U2_T0","","Tomato","V2","t0-v2",26,36
+"FIB00924","t0-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00956","t2-u1","FIB542","Clinic Visit 1","T2","FIB542_B1_T2","FIB542_U1_T2","","Apple","V1","t2-v1",26,36
+"FIB01075","t2-u2","FIB542","Clinic Visit 2","T2","FIB542_B2_T2","FIB542_U2_T2","","Tomato","V2","t2-v2",26,36
+"FIB00925","t2-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00961","t4-u1","FIB542","Clinic Visit 1","T4","FIB542_B1_T4","FIB542_U1_T4","","Apple","V1","t4-v1",26,36
+"FIB01082","t4-u2","FIB542","Clinic Visit 2","T4","FIB542_B2_T4","FIB542_U2_T4","","Tomato","V2","t4-v2",26,36
+"FIB00926","t4-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00966","t6-u1","FIB542","Clinic Visit 1","T6","FIB542_B1_T6","FIB542_U1_T6","","Apple","V1","t6-v1",26,36
+"FIB01087","t6-u2","FIB542","Clinic Visit 2","T6","FIB542_B2_T6","FIB542_U2_T6","","Tomato","V2","t6-v2",26,36
+"FIB00927","t6-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB00971","t8-u1","FIB542","Clinic Visit 1","T8","FIB542_B1_T8","FIB542_U1_T8","","Apple","V1","t8-v1",26,36
+"FIB01092","t8-u2","FIB542","Clinic Visit 2","T8","FIB542_B2_T8","FIB542_U2_T8","","Tomato","V2","t8-v2",26,36
+"FIB01164","t8-ux",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01020","t0-u1","FIB579","Clinic Visit 1","T0","FIB579_B1_T0","FIB579_U1_T0","","Apple","V1","t0-v1",29,23
+"FIB01181","t2-u1","FIB579","Clinic Visit 1","T2","FIB579_B1_T2","FIB579_U1_T2","","Apple","V1","t2-v1",29,23
+"FIB01028","t4-u1","FIB579","Clinic Visit 1","T4","FIB579_B1_T4","FIB579_U1_T4","","Apple","V1","t4-v1",29,23
+"FIB01033","t6-u1","FIB579","Clinic Visit 1","T6","FIB579_B1_T6","FIB579_U1_T6","","Apple","V1","t6-v1",29,23
+"FIB01038","t8-u1","FIB579","Clinic Visit 1","T8","FIB579_B1_T8","FIB579_U1_T8","","Apple","V1","t8-v1",29,23
+"FIB01166","t0-u1","FIB621","Clinic Visit 1","T0","FIB621_B1_T0","FIB621_U1_T0","","Watermelon","V1","t0-v1",37,42
+"FIB01169","t2-u5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01172","t4-u5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01175","t6-u5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01178","t8-u5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01167","t0-u1","FIB623","Clinic Visit 1","T0","FIB623_B1_T0","FIB623_U1_T0","","Tomato","V1","t0-v1",32,34
+"FIB01170","t2-u3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01173","t4-u3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01176","t6-u3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01179","t8-u3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"FIB01009","t0-u1","FIB624","Clinic Visit 1","T0","FIB624_B1_T0","FIB624_U1_T0","","Orange","V1","t0-v1",23,36
+"FIB01011","t2-u1","FIB624","Clinic Visit 1","T2","FIB624_B1_T2","FIB624_U1_T2","","Orange","V1","t2-v1",23,36
+"FIB01013","t4-u1","FIB624","Clinic Visit 1","T4","FIB624_B1_T4","FIB624_U1_T4","","Orange","V1","t4-v1",23,36
+"FIB01015","t6-u1","FIB624","Clinic Visit 1","T6","FIB624_B1_T6","FIB624_U1_T6","","Orange","V1","t6-v1",23,36
+"FIB01017","t8-u1","FIB624","Clinic Visit 1","T8","FIB624_B1_T8","FIB624_U1_T8","","Orange","V1","t8-v1",23,36
+"FIB01021","t0-u1","FIB632","Clinic Visit 1","T0","FIB632_B1_T0","FIB632_U1_T0","","Watermelon","V1","t0-v1",22,25
+"FIB01024","t2-u1","FIB632","Clinic Visit 1","T2","FIB632_B1_T2","FIB632_U1_T2","","Watermelon","V1","t2-v1",22,25
+"FIB01029","t4-u1","FIB632","Clinic Visit 1","T4","FIB632_B1_T4","FIB632_U1_T4","","Watermelon","V1","t4-v1",22,25
+"FIB01034","t6-u1","FIB632","Clinic Visit 1","T6","FIB632_B1_T6","FIB632_U1_T6","","Watermelon","V1","t6-v1",22,25
+"FIB01039","t8-u1","FIB632","Clinic Visit 1","T8","FIB632_B1_T8","FIB632_U1_T8","","Watermelon","V1","t8-v1",22,25
+"FIB01022","t0-u1","FIB634","Clinic Visit 1","T0","FIB634_B1_T0","FIB634_U1_T0","","Tomato","V1","t0-v1",34,63
+"FIB01098","t0-u2","FIB634","Clinic Visit 2","T0","FIB634_B2_T0","FIB634_U2_T0","","Orange","V2","t0-v2",34,63
+"FIB01025","t2-u1","FIB634","Clinic Visit 1","T2","FIB634_B1_T2","FIB634_U1_T2","","Tomato","V1","t2-v1",34,63
+"FIB01104","t2-u2","FIB634","Clinic Visit 2","T2","FIB634_B2_T2","FIB634_U2_T2","","Orange","V2","t2-v2",34,63
+"FIB01030","t4-u1","FIB634","Clinic Visit 1","T4","FIB634_B1_T4","FIB634_U1_T4","","Tomato","V1","t4-v1",34,63
+"FIB01110","t4-u2","FIB634","Clinic Visit 2","T4","FIB634_B2_T4","FIB634_U2_T4","","Orange","V2","t4-v2",34,63
+"FIB01035","t6-u1","FIB634","Clinic Visit 1","T6","FIB634_B1_T6","FIB634_U1_T6","","Tomato","V1","t6-v1",34,63
+"FIB01116","t6-u2","FIB634","Clinic Visit 2","T6","FIB634_B2_T6","FIB634_U2_T6","","Orange","V2","t6-v2",34,63
+"FIB01040","t8-u1","FIB634","Clinic Visit 1","T8","FIB634_B1_T8","FIB634_U1_T8","","Tomato","V1","t8-v1",34,63
+"FIB01122","t8-u2","FIB634","Clinic Visit 2","T8","FIB634_B2_T8","FIB634_U2_T8","","Orange","V2","t8-v2",34,63
+"FIB01131","t0-u1","FIB646","Clinic Visit 1","T0","FIB646_B1_T0","FIB646_U1_T0","FIB646_F1_T0","Watermelon","V1","t0-v1",29,26
+"FIB01136","t2-u1","FIB646","Clinic Visit 1","T2","FIB646_B1_T2","FIB646_U1_T2","","Watermelon","V1","t2-v1",29,26
+"FIB01141","t4-u1","FIB646","Clinic Visit 1","T4","FIB646_B1_T4","FIB646_U1_T4","","Watermelon","V1","t4-v1",29,26
+"FIB01146","t6-u1","FIB646","Clinic Visit 1","T6","FIB646_B1_T6","FIB646_U1_T6","","Watermelon","V1","t6-v1",29,26
+"FIB01151","t8-u1","FIB646","Clinic Visit 1","T8","FIB646_B1_T8","FIB646_U1_T8","","Watermelon","V1","t8-v1",29,26
+"FIB01132","t0-u1","FIB659","Clinic Visit 1","T0","FIB659_B1_T0","FIB659_U1_T0","FIB659_F1_T0","Orange","V1","t0-v1",24,31
+"FIB01137","t2-u1","FIB659","Clinic Visit 1","T2","FIB659_B1_T2","FIB659_U1_T2","","Orange","V1","t2-v1",24,31
+"FIB01142","t4-u1","FIB659","Clinic Visit 1","T4","FIB659_B1_T4","FIB659_U1_T4","","Orange","V1","t4-v1",24,31
+"FIB01147","t6-u1","FIB659","Clinic Visit 1","T6","FIB659_B1_T6","FIB659_U1_T6","","Orange","V1","t6-v1",24,31
+"FIB01152","t8-u1","FIB659","Clinic Visit 1","T8","FIB659_B1_T8","FIB659_U1_T8","","Orange","V1","t8-v1",24,31

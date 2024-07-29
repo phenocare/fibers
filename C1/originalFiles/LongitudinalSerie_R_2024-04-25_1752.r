@@ -16,10 +16,6 @@ label(data$information_and_consent_timestamp)="Survey Timestamp"
 label(data$registration_date)="Registration Date"
 label(data$to_be_informed)="I wish to be informed of the publication of results and/or the progress of the study."
 label(data$abnormal)="If abnormalities are found in routine analysis (choose one option). "
-label(data$gp_name)="Provide GP name here if you want us to contact your GP."
-label(data$gp_practice)="Provide GP practice name here"
-label(data$gp_address)="Provide GP practice address here"
-label(data$gp_postcode)="Provide GP postcode here"
 label(data$unused_specimens)="What is your preference for any un-used specimens (choose one option)"
 label(data$inulin_choices___1)="I would like to participate in the food study (tick those that apply, and you may choose more than one) (choice=Jerusalem artichoke)"
 label(data$inulin_choices___2)="I would like to participate in the food study (tick those that apply, and you may choose more than one) (choice=Globe artichoke)"
@@ -30,17 +26,11 @@ label(data$inulin_choices___6)="I would like to participate in the food study (t
 label(data$inulin_choices___7)="I would like to participate in the food study (tick those that apply, and you may choose more than one) (choice=Tomato)"
 label(data$inulin_choices___8)="I would like to participate in the food study (tick those that apply, and you may choose more than one) (choice=Watermelon)"
 label(data$faecal_sample)="I would like to provide a stool sample as part of this study "
-label(data$email1)="Email Address:"
-label(data$consent_sig)="By signing this consent form, I confirm that  - I have read the study information sheet, and my questions about the study have been answered satisfactorily.   - I understand that my participation is voluntary and I am free to withdraw at any time before and during the collection without giving a reason.  - I understand that if I withdraw from the study, any collected samples and data can remain as part of the study.  However, I can formally write to the researchers to request that the samples and/or data be removed.   - I understand that my information can be collected, analysed, reported, and shared internationally with others as part of this research project. However, I know that my name will not be used, and I will not be identified. -I understand that Murdoch University Research Ethics Committee (HREC) has reviewed and approved this study.  - I understand that no individualised results will be provided but the overall results will be published in peer-reviewed journals and/or ANPC webpage.   "
 label(data$information_and_consent_complete)="Complete?"
 label(data$demographic_timestamp)="Survey Timestamp"
-label(data$first_name)="First Name?"
-label(data$last_name)="Last Name?"
 label(data$gender)="Gender:"
 label(data$dob)="Date of Birth:"
 label(data$age)="Age:"
-label(data$phone)="Contact Phone:"
-label(data$email)="Email Address:"
 label(data$availability___1)="What is your availability for attending the clinic visit?  Please select all that apply. (choice=Tuesday)"
 label(data$availability___2)="What is your availability for attending the clinic visit?  Please select all that apply. (choice=Thursday)"
 label(data$availability___3)="What is your availability for attending the clinic visit?  Please select all that apply. (choice=Saturday)"
@@ -154,24 +144,38 @@ levels(data$food_diary_complete.factor)=c("Incomplete","Unverified","Complete")
 levels(data$time_hr.factor)=c("T0","T1","T2","T3","T4","T5","T6","T7","T8")
 levels(data$clinic_measures_complete.factor)=c("Incomplete","Unverified","Complete")
 
-t<-data.table(recordId=data$record_id, foodType = dplyr::coalesce(
-              factor(data$test_food___1.factor, labels = c("unchecked", "globe artichoke")),
-              factor(data$test_food___2.factor, labels = c("unchecked", "jerusalem artichoke")),
-              factor(data$test_food___3.factor, labels = c("unchecked", "elephant garlic")),
-              factor(data$test_food___4.factor, labels = c("unchecked", "yacon")),
-              factor(data$test_food___5.factor, labels = c("unchecked", "apple")),
-              factor(data$test_food___6.factor, labels = c("unchecked", "orange")),
-              factor(data$test_food___7.factor, labels = c("unchecked", "tomato")),
-              factor(data$test_food___8.factor, labels = c("unchecked", "watermelon")),
-              factor(data$test_food___9.factor, labels = c("unchecked", "baseline"))
-              ),
-              sampleLabel=data$urine_id)
 
+# here we coalesce the foodType in a single column (not necessary, skip to line 188)
+foodType <- data.frame(ga = as.character(factor(data$test_food___1.factor, labels = c(NA, "globe artichoke"))),
+                       ja = as.character(factor(data$test_food___2.factor, labels = c(NA, "jerusalem artichoke"))),
+                       eg = as.character(factor(data$test_food___3.factor, labels = c(NA, "elephant garlic"))),
+                       ya = as.character(factor(data$test_food___4.factor, labels = c(NA, "yacon"))),
+                       ap = as.character(factor(data$test_food___5.factor, labels = c(NA, "apple"))), #11
+                       or = as.character(factor(data$test_food___6.factor, labels = c(NA, "orange"))),
+                       to = as.character(factor(data$test_food___7.factor, labels = c(NA, "tomato"))),
+                       wa = as.character(factor(data$test_food___8.factor, labels = c(NA, "watermelon"))), #11
+                       ba = as.character(factor(data$test_food___9.factor, labels = c(NA, "baseline"))))
+
+foodTypes = dplyr::coalesce(
+  foodType$ga, foodType$ja, foodType$eg, foodType$ya, foodType$ap, foodType$or, foodType$to, foodType$wa, foodType$ba
+)
+
+
+# here we check that we captured it all correct
 t<-data.table(recordId=data$record_id,
-              foodType = factor(data$test_food___5.factor, labels = c("unchecked", "apple")),
-              sampleLabel=data$urine_id)
+              foodType = foodTypes,
+              sampleLabel = data$urine_id,
+              sampleMatrixType = "URI")
+
+table(t$foodType) # correct
+table(t$sampleMatrixType)
 
 
+# t<-data.table(recordId=data$record_id,
+#               foodType = factor(data$test_food___5.factor, labels = c("unchecked", "apple")),
+#               sampleLabel=data$urine_id)
+
+# because previous code for coalescence did not work we used an sql strategy
 types <- c("Globe Artichoke",
            "Jerusalem Artichoke",
            "Elephant Garlic",
@@ -193,9 +197,12 @@ for (type in 1:length(types)) {
   listOf[[type]] <- visit
 }
 tableOf <- data.table(do.call("rbind", listOf))
+sel <- c("type", "uuid")
+tableOf <- tableOf[,..sel]
 
-
+# we find rows with valid tubeLabels (one row can have multiple tubes)
 idx <- grepl("FIB", data$urine_id) | grepl("FIB", data$blood_id) | grepl("FIB", data$feces_id)
+
 t<-data.table(recordId = data$record_id[idx],
               visit = data$redcap_event_name.factor[idx],
               timePoint = data$time_hr.factor[idx],
@@ -204,20 +211,69 @@ t<-data.table(recordId = data$record_id[idx],
               fecesId = data$feces_id[idx])
 t$uuid <- paste0(t$recordId, t$visit)
 
+
 tt <- merge(t, tableOf, all.x = TRUE, by = "uuid")
-tt <- tt[grepl("FIB", tt$recordId.x), c(2,3,4,5,6,7,10)]
-tt$typeId <- paste0("U", gsub("Clinic Visit ", "", tt$visit.x))
+tt <- tt[grepl("FIB", tt$recordId), c(-1)]
+tt$typeId <- gsub("Clinic Visit ", "V", tt$visit)
 tt$sampleTimePoint <- cleanNames(paste0(tt$timePoint, "-", tt$typeId))
-tt$key <- cleanNames(paste0(tt$recordId.x, tt$sampleTimePoint))
+tt$key <- cleanNames(paste0(tt$recordId, tt$sampleTimePoint))
+
+################################################################################
+### adding metadata
+################################################################################
+
+bmi <- data[!is.na(data$bmi_2),]
+sel <- c("record_id", "bmi_2")
+bmi <- bmi[,sel]
+colnames(bmi) <- c("record_id", "bmi")
+tt <-merge(tt, bmi, all.x = TRUE, by.x = "recordId", by.y = "record_id")
+
+age <- data[!is.na(data$age),]
+sel <- c("record_id", "age")
+age <- age[,sel]
+tt <-merge(tt, age, all.x = TRUE, by.x = "recordId", by.y = "record_id")
+
+sex <- data[!is.na(data$gender.factor),]
+sel <- c("record_id", "gender.factor")
+sex <- sex[,sel]
+colnames(sex) <- c("record_id", "sex")
+tt <-merge(tt, sex, all.x = TRUE, by.x = "recordId", by.y = "record_id")
+
+################################################################################
+### ADD MORE METADADA HERE...
+################################################################################
 
 
-s <- read.table("sampleDescriptionListUri.ignore.tsv", header = TRUE, sep = "\t")
+
+## here we got all valid samples with information
+
+# here we merge with existing list of samples as corrected by RLL
+# we cannot use this anymore as 3 additional samples where added
+# s <- read.table("sampleDescriptionListUri.ignore.tsv", header = TRUE, sep = "\t")
+# therefore we use this ...
+s <- dbGetQuery(con, "select * from samples where projectName = 'fibers' and sampleMatrixType = 'URI'")
 s$key <- paste0(s$sourceID, s$sampleTimePoint)
+s$key <- gsub("-u", "-v", s$key)
 st <- merge(s, tt, all.x = TRUE, by = "key")
-st <- st[,c(2,3,4,6,8,9,10,20,22,23,24,24,26)]
+st <- st[,c(c(2,9),c(19:29))]
+# we got 434 rows
+write.table(st, file = "RC_dump_URI.csv", sep = ",", row.names = FALSE, quote = TRUE)
 
-write.table(st, file = "RC_dump.csv", sep = ",", row.names = FALSE, quote = TRUE)
+# we do the same for serum
+s <- dbGetQuery(con, "select * from samples where projectName = 'fibers' and sampleMatrixType = 'PLA'")
+s$key <- paste0(s$sourceID, s$sampleTimePoint)
+s$key <- gsub("-b", "-v", s$key)
+st <- merge(s, tt, all.x = TRUE, by = "key")
+st <- st[,c(c(2,9),c(19:29))]
+# we got 748 rows
 
-q <- read.table("Fiber_Urine_Quants_Crea-Hip-PAG.csv", header = TRUE, sep = ",")
-qst <- merge(q, st, all.x = TRUE, by = "sampleID")
-write.table(qst, file = "quant.csv", sep = ",", row.names = FALSE, quote = TRUE)
+write.table(st, file = "RC_dump_PLA.csv", sep = ",", row.names = FALSE, quote = TRUE)
+
+
+
+
+
+
+# q <- read.table("Fiber_Urine_Quants_Crea-Hip-PAG.csv", header = TRUE, sep = ",")
+# qst <- merge(q, st, all.x = TRUE, by = "sampleID")
+# write.table(qst, file = "quant.csv", sep = ",", row.names = FALSE, quote = TRUE)
