@@ -99,7 +99,7 @@ manifest$sourceID <- cleanNames(manifest$sourceName)
 manifest$sampleTimePoint <- cleanNames(paste0(manifest$sampleTimePoint,
                                               "-",
                                               manifest$comment))
-manifest$sampleAliquots <- manifest$sampleAliquots
+manifest$sampleAliquots <- rep(1,N)
 
 # Provide information about the boxes
 # Please use:
@@ -189,3 +189,41 @@ write.table(sampleDescriptionList,
 # and disconnecting DB
 dbDisconnect(con)
 ```
+
+# update layout for PLA
+```{r}
+sid <- read.table("updateLayoutForm_FIBb01-27-06-2024.csv", header = TRUE, sep = ",")
+```
+
+# create small test batch for SCFA
+
+## we found some problem with sampleAliquots that we need to fix
+I first checked that removing the info in the sampleAliquots would not create
+non unique entries. ALL GOOD!
+
+then we need to move the info into comments
+
+```{r}
+# dbExecute(con, "update samples set comments = comments || ' ' || sampleAliquots where projectName = 'fibers' and sampleMatrixType = 'PLA' and sampleAliquots not null")
+
+dbGetQuery(con, "select sampleAliquots, comments from samples where projectName = 'fibers' and sampleMatrixType = 'PLA' and sampleAliquots not null")
+
+# dbExecute(con, "update samples set sampleAliquots = 1 where projectName = 'fibers' and sampleMatrixType = 'PLA'")
+```
+
+```{r}
+t <- read.table("RC_dump_PLA.csv", header = TRUE, sep = ",")
+t <- t[!is.na(t$type),]
+t <- t[!is.na(t$bloodId),]
+t <- t[t$type == "Elephant Garlic" | t$type == "Yacon",]
+t <- t[t$recordId %in% c("FIB112", "FIB150", "FIB193", "FIB202", 
+                         "FIB207", "FIB212", "FIB220", "FIB274"),]
+
+selectedIds <- t$sampleID
+
+# we create a query to create a batch using option 3
+dbGetQuery(con, paste0("select * from samples where projectName = 'fibers' and sampleMatrixType = 'PLA' and sampleID in ('", paste0(selectedIds, collapse = "','"), "')"))
+qry <- paste0("select * from samples where projectName = 'fibers' and sampleMatrixType = 'PLA' and sampleID in ('", paste0(selectedIds, collapse = "','"), "')")
+
+```
+
