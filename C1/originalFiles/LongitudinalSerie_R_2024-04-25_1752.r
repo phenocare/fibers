@@ -3,6 +3,7 @@ rm(list=ls())
 graphics.off()
 #Load Hmisc library
 library(Hmisc)
+library(data.table)
 #Read Data
 data=read.csv('originalFiles/LongitudinalSerie_DATA_2024-04-25_1752.csv')
 #Setting Labels
@@ -215,8 +216,10 @@ t$uuid <- paste0(t$recordId, t$visit)
 tt <- merge(t, tableOf, all.x = TRUE, by = "uuid")
 tt <- tt[grepl("FIB", tt$recordId), c(-1)]
 tt$typeId <- gsub("Clinic Visit ", "V", tt$visit)
-tt$sampleTimePoint <- cleanNames(paste0(tt$timePoint, "-", tt$typeId))
-tt$key <- cleanNames(paste0(tt$recordId, tt$sampleTimePoint))
+
+tt$sampleTimePoint <- nmr.parser::cleanNames(paste0(tt$timePoint, "-", tt$typeId))
+tt$key <- nmr.parser::cleanNames(paste0(tt$recordId, tt$sampleTimePoint))
+
 
 ################################################################################
 ### adding metadata
@@ -238,9 +241,152 @@ sel <- c("record_id", "gender.factor")
 sex <- sex[,sel]
 colnames(sex) <- c("record_id", "sex")
 tt <-merge(tt, sex, all.x = TRUE, by.x = "recordId", by.y = "record_id")
-
+rm(bmi,age,sex,sel)
 ################################################################################
 ### ADD MORE METADADA HERE...
+################################################################################
+library(lubridate)
+
+tdf <- data[!nchar(data$dob)==0,]
+sel <- c("record_id", "dob")
+tdf <- tdf[,sel]
+colnames(tdf) <- c("record_id", "DOB")
+tdf$DOB<-as.character(dmy(tdf$DOB))
+tt <-merge(tt, tdf, all.x = TRUE, by.x = "recordId", by.y = "record_id")
+rm(tdf)
+  
+tdf <- data[!is.na(data$ht),]
+sel <- c("record_id", "ht")
+tdf <- tdf[,sel]
+colnames(tdf) <- c("record_id", "height")
+tt <-merge(tt, tdf, all.x = TRUE, by.x = "recordId", by.y = "record_id")
+rm(tdf)
+ 
+tdf <- data[!is.na(data$wt),]
+sel <- c("record_id", "wt")
+tdf <- tdf[,sel]
+colnames(tdf) <- c("record_id", "Weight")
+tt <-merge(tt, tdf, all.x = TRUE, by.x = "recordId", by.y = "record_id")
+rm(tdf)
+
+tdf <- data[!nchar(data$sv_date)==0,]
+sel <- c("record_id","sv_timepoint" ,"sv_date")
+tdf <- tdf[,sel]
+tdf<-tdf[match(paste0(tt$recordId,tt$timePoint),paste0(tdf$record_id,"T",tdf$sv_timepoint)),]
+tt$`Screen Visit Date`<-as.character(dmy(tdf$sv_date))
+rm(tdf)
+
+tdf <- data[!is.na(data$sv_h2bt),]
+sel <- c("record_id","sv_timepoint" ,"sv_h2bt")
+tdf <- tdf[,sel]
+tdf<-tdf[match(paste0(tt$recordId,tt$timePoint),paste0(tdf$record_id,"T",tdf$sv_timepoint)),]
+tt$`Screen Visit H2BT`<-tdf$sv_h2bt
+rm(tdf)
+
+tdf <- data[!nchar(data$food_date)==0,]
+sel <- c("record_id","redcap_event_name" ,"food_date")
+tdf <- tdf[,sel]
+tdf$redcap_event_name<-paste0("V",
+                              sapply(strsplit(tdf$redcap_event_name,"_"),"[",3))
+tdf<-tdf[match(paste0(tt$recordId,tt$typeId),paste0(tdf$record_id,tdf$redcap_event_name)),]
+tt$`food date`<-as.character(dmy(tdf$food_date))
+rm(tdf)
+
+tdf <- data[!nchar(data$cv_date)==0,]
+sel <- c("record_id","redcap_event_name" ,"cv_date")
+tdf <- tdf[,sel]
+tdf$redcap_event_name<-paste0("V",
+                              sapply(strsplit(tdf$redcap_event_name,"_"),"[",3))
+tdf<-tdf[match(paste0(tt$recordId,tt$typeId),paste0(tdf$record_id,tdf$redcap_event_name)),]
+tt$`Clinic Visit Date`<-as.character(dmy(tdf$cv_date))
+rm(tdf)
+  
+tdf <- data[!nchar(data$h2bt_level)==0,]
+sel <- c("blood_id" ,"h2bt_level")
+tdf <- tdf[match(tt$bloodId,tdf$blood_id),sel]
+tt$`Clinic Visit H2BT`<-tdf$h2bt_level
+
+
+tdf <- data[!nchar(data$d_food_non_standard)==0,]
+sel <- c("record_id","redcap_event_name" ,"d_food_non_standard")
+tdf <- tdf[,sel]
+tdf$redcap_event_name<-paste0("V",
+                              sapply(strsplit(tdf$redcap_event_name,"_"),"[",3))
+tdf<-tdf[match(paste0(tt$recordId,tt$typeId),paste0(tdf$record_id,tdf$redcap_event_name)),]
+tt$`Non standard Food`<-tdf$d_food_non_standard
+rm(tdf)
+
+tdf <- data[!nchar(data$d_medications)==0,]
+sel <- c("record_id","redcap_event_name" ,"d_medications")
+tdf <- tdf[,sel]
+tdf$redcap_event_name<-paste0("V",
+                              sapply(strsplit(tdf$redcap_event_name,"_"),"[",3))
+tdf<-tdf[match(paste0(tt$recordId,tt$typeId),paste0(tdf$record_id,tdf$redcap_event_name)),]
+tt$`Medication`<-tdf$d_medications
+rm(tdf) 
+
+tdf <- data[!nchar(data$d_activity)==0,]
+sel <- c("record_id","redcap_event_name" ,"d_activity")
+tdf <- tdf[,sel]
+tdf$redcap_event_name<-paste0("V",
+                              sapply(strsplit(tdf$redcap_event_name,"_"),"[",3))
+tdf<-tdf[match(paste0(tt$recordId,tt$typeId),paste0(tdf$record_id,tdf$redcap_event_name)),]
+tt$`Activity`<-tdf$d_activity
+rm(tdf) 
+
+################################################################################
+### End of Metadata cleaning. --> Expand and add sampleID --> daE
+################################################################################
+
+library(tidyr)
+label(tt$bloodId) = NA
+label(tt$urineId) = NA
+label(tt$fecesId) = NA
+test<-tt%>%
+  pivot_longer(cols = bloodId:fecesId,names_to = "sampleMatrixType",values_to ="tubeLabels" )%>%
+  mutate(sampleMatrixType = ifelse(sampleMatrixType=="bloodId","PLA","URI"),
+         sampleMatrixType = ifelse(substr(tubeLabels,8,8)=="F","FAE",sampleMatrixType))%>%
+  filter(!nchar(tubeLabels)==0)%>%
+  mutate(tubeLabels = tolower(gsub("_","-",tubeLabels)))
+
+library(dplyr)
+
+setwd("~/git/phenocare/fibers/C1")
+
+sdl_uri<-read.table("sampleDescriptionListUri.ignore.tsv",header = T)
+sid <- read.table("updateLayoutForm_FIBb01-27-06-2024.csv", header = TRUE, sep = ",")
+sid<-sid%>%select(sampleID,tubeLabel)%>%
+  mutate(projectName = "fibers",
+         cohortName = "C1",
+         sampleMatrixType = "PLA",
+         sourceID = sapply(strsplit(tubeLabel,"-"),"[",1),
+         sampleTimePoint = paste0(sapply(strsplit(tubeLabel,"-"),"[",3),"-",sapply(strsplit(tubeLabel,"-"),"[",2)))
+sdl_uri<-sdl_uri%>%select(sampleID:cohortName,sampleMatrixType,tubeLabel:sampleTimePoint)
+
+SDL<-rbind(sdl_uri,sid)
+rm(sdl_uri,sid)
+
+ANN<-cbind(SDL[match(test$tubeLabels,gsub("fib-","fib",SDL$tubeLabel)),],test%>%select(visit:Activity))
+
+ANN$sampleID<-makeUnique(ANN$sampleID,sep = "#")
+
+da <- new("dataElement",
+          .Data = NA_character_,
+          obsDescr = list(ANN),
+          varName = NA_character_,
+          type = "ANN",
+          method = NA_character_,
+          version = paste0(c(paste("daE: 1.0; rldx:", utils::packageVersion("rldx")),
+                             paste("nmr.parser:", utils::packageVersion("nmr.parser")),
+                             paste("fusion:", utils::packageVersion("fusion"))),
+                           collapse = "; "))
+
+check(da)
+# save(da,file = "~/OneDrive - Murdoch University/datasets/fibers/C1/dataElements/fibers_C1_ANN.daE")
+rm(da,ANN,SDL,test,tt,t)
+
+################################################################################
+### End of Annotation daE making 
 ################################################################################
 
 
