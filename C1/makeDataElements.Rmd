@@ -7,8 +7,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,warning = FALSE,message = FALSE,cache = FALSE)
-
-library(fusion)
+devtools::load_all("~/git/phenological/fusion/")
 library(readxl)
 library(dplyr)
 setwd("~/git/phenocare/fibers/C1")
@@ -29,4 +28,26 @@ SDL$Sex<-meta$Gender[match(SDL$tubeLabel,meta$tubeLabel)]
 
 write.csv(SDL,"~/Desktop/Fibers_URI_metadata.csv")
 ```
+
+#SCFA_80
+```{r}
+library(xml2)
+devtools::load_all("~/git/phenological/ms-parser")
+
+path<-"~/Downloads/OneDrive_1_26-09-2024/fibers_C1_PLA_MS-AT-SCFA@fEPP_FIBr04_FIBp041.xml"
+test<-readSCFA(path)
+path<-"~/Downloads/OneDrive_1_26-09-2024/fibers_C1_PLA_MS-AT-SCFA@fEPP_FIBr04_FIBp042.xml"
+test1<-readSCFA(path)
+
+da<-rbind(test,test1)
+
+check(da)
+
+# save(da,file = "~/OneDrive - Murdoch University/datasets/fibers/C1/dataElements/fibers_C1_PLA_SCFA.daE")
+
+rm(path,test,test1,da))
+
+```
+
+
 
