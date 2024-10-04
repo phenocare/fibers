@@ -15,19 +15,7 @@ setwd("~/git/phenocare/fibers/C1")
 
 
 # Annotaion
-## Urine only ###
-```{r}
-SDL<-read.csv("originalFiles/sampleDescriptionListUri_V2.ignore.txt",sep = "\t")%>%
-  select(sampleID:cohortName,sampleMatrixType,tubeLabel:sampleTimePoint)
-SDL$sampleMatrixType<-"URI"
-SDL$tubeLabel[which(SDL$tubeLabel=="fib-112-u1-t8")]<-"fib112-u1-t8"
-
-meta<-read_excel("originalFiles/SampleLIst_URI_FINAL_RM.xlsx")
-meta$tubeLabel<-gsub("_","-",tolower(meta$tubeLabel))
-SDL$Sex<-meta$Gender[match(SDL$tubeLabel,meta$tubeLabel)]
-
-write.csv(SDL,"~/Desktop/Fibers_URI_metadata.csv")
-```
+See fibers/C1/originalFiles/LongitudinalSeries_R_2024-04-25_
 
 #SCFA_80
 ```{r}
@@ -45,7 +33,7 @@ check(da)
 
 # save(da,file = "~/OneDrive - Murdoch University/datasets/fibers/C1/dataElements/fibers_C1_PLA_SCFA.daE")
 
-rm(path,test,test1,da))
+rm(path,test,test1,da)
 
 ```
 

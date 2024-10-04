@@ -201,6 +201,46 @@ tableOf <- data.table(do.call("rbind", listOf))
 sel <- c("type", "uuid")
 tableOf <- tableOf[,..sel]
 
+### There are lot of typos and missing data table(redcap)
+SDL<-read.csv("~/git/phenocare/fibers/C1/sampleDescriptionAll.csv")
+SDL<-SDL%>%select(sampleID:sampleMatrixType,tubeLabel:sampleTimePoint)%>%
+  mutate(key = gsub("-","_",gsub("FIB-","FIB",toupper(tubeLabel))))
+
+SDL_URI<-SDL%>%filter(sampleMatrixType=="URI")
+SDL_PLA<-SDL%>%filter(sampleMatrixType=="PLA")
+SDL_FAE<-SDL%>%filter(sampleMatrixType=="FAE")
+SDL_URI$key[-which(SDL_URI$key %in% data$urine_id)]
+## Fixing typo on urine_id, blood_id, feces_id
+# FIB123_U3_T8 and FIB123_B3_T8 (they bve duplicated T6 but in different time_hr....)
+idx<-which(data$urine_id=="FIB123_U3_T6" & data$time_hr=="8")
+data$urine_id[idx]<-"FIB123_U3_T8"
+data$blood_id[idx]<-"FIB123_B3_T8"
+rm(idx)
+# "FIB123_U4_" many of the tubeLabels are wrong 
+idx<-grep("FIB123_U4_",data$urine_id)
+data$urine_id[idx]<-paste0("FIB123_U4_T",data$time_hr[idx])
+data$blood_id[idx]<-paste0("FIB123_B4_T",data$time_hr[idx])
+
+# # "FIB202_UX_T8" (Does not exist in red cap)
+# data_add <- data[which(data$urine_id == "FIB202_UX_T6"), ]
+# data_add$time_hr <- 8
+# data_add$urine_id <- "FIB202_UX_T8"
+# data_add$h2bt_level <- NA
+# data <- rbind(data, data_add)
+# rm(data_add)
+
+# "FIB239_U1_T2" "FIB247_U3_T0" "FIB247_U3_T2" "FIB247_U3_T4"
+[8] "FIB247_U3_T6" "FIB247_U3_T8" "FIB426_U4_T2" "FIB426_U4_T4" "FIB426_U4_T6" "FIB426_U4_T8" "FIB621_U5_T2"
+[15] "FIB621_U5_T4" "FIB621_U5_T6" "FIB621_U5_T8" "FIB623_U3_T2" "FIB623_U3_T4" "FIB623_U3_T6" "FIB623_U3_T8"
+
+
+SDL_PLA$key[-which(SDL_PLA$key %in% data$blood_id)]
+SDL_FAE$key[-which(SDL_FAE$key %in% data$feces_id)]
+
+
+
+
+
 # we find rows with valid tubeLabels (one row can have multiple tubes)
 idx <- grepl("FIB", data$urine_id) | grepl("FIB", data$blood_id) | grepl("FIB", data$feces_id)
 
