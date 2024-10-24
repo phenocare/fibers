@@ -5,7 +5,7 @@ graphics.off()
 library(Hmisc)
 library(data.table)
 #Read Data
-data=read.csv('originalFiles/LongitudinalSerie_DATA_2024-04-25_1752.csv')
+data=read.csv('~/git/phenocare/fibers/C1/originalFiles/LongitudinalSerie_DATA_2024-04-25_1752.csv')
 #Setting Labels
 
 label(data$record_id)="Record ID"
@@ -251,9 +251,9 @@ idx<-grep("FIB426_U4",SDL$key)
 SDL$key[idx]<-gsub("U4","U1",SDL$key[idx])
 rm(idx)
 
-# FIB427 U4 is actually FIB253 change the SDL
+# FIB427 U4 is actually FIB256 change the SDL
 idx<-grep("FIB247",SDL$key)
-SDL$key[idx]<-gsub("247","253",SDL$key[idx])
+SDL$key[idx]<-gsub("247","256",SDL$key[idx])
 rm(idx)
 
 # FIB621 U5 is actually U1 change the SDL
@@ -538,6 +538,7 @@ Ann<-cbind(SDL_red%>%select(-key),test_red%>%select(visit:Activity))
 # 
 # ANN<-cbind(SDL[match(test$tubeLabels,gsub("fib-","fib",SDL$tubeLabel)),],test%>%select(visit:Activity))
 # 
+library(fusion)
 Ann$sampleID<-makeUnique(Ann$sampleID,sep = "#")
 # 
 da <- new("dataElement",
