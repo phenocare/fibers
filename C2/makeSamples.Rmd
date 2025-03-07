@@ -1,0 +1,217 @@
+---
+title: "fibers - C2 - URI & PLA - no comment - v0.2.0"
+author: "Your Name"
+date: "The Date"
+output: 
+  html_document:
+    css: ../makeConfig.css
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3
+    number_sections: true
+    theme: lumen
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(knitr)
+library(htmlTable)
+library(dplyr)
+library(readxl)
+library(data.table)
+library(jsonlite)
+
+devtools::load_all(Sys.getenv("FUSION"))
+devtools::load_all(Sys.getenv("ROLODEX"))
+set.seed(5474)
+options("max.print" = 10000)
+```
+
+# project identification
+```{r}
+# Get the name of the project from the database
+con <- openDb()
+project <- input(con, what = "project")
+```
+
+```{r}
+# Set project and prefix
+projectName <- project$name
+projectID <- project$projectID
+prefix <- rolProject(projectName)$prefix
+```
+
+```{r}
+# Get the name of the cohort name from the database
+cohortName <- input(con,
+                    what = "cohort",
+                    options = list("projectID" = projectID))$cohortName
+```
+
+# selecting and reading manifest
+```{r}
+# Get file with manifest. If using xlsx files, make sure that the information
+# is on the first sheet
+manifest <- as.data.table(inputFile())
+N <- nrow(manifest)
+print(N)
+setDT(manifest)
+```
+
+```{r}
+# if aliquots represent the number and not the label, we can expand the manifest to give each tube (aliquots) a proper uuid
+manifest <- manifest[rep(seq_len(.N), sampleAliquots)]
+
+# this create a column aliquots that becomes the new sampleAliquots
+# REMEMBER TO CHANGE THE CODE BELOW TO USE aliquots INSTEAD OF sampleAliquots
+manifest[, aliquots := sequence(sampleAliquots), by = .(tubeLabel, sampleAliquots)]
+
+N <- nrow(manifest)
+print(N)
+```
+
+```{r}
+# creating sampleIDs
+sampleID <- getLastSampleID(projectName, length.out = N, offset = 0)$nextID
+```
+
+# matching and checking
+```{r} 
+# Match column in the manifest with the mandatory fields below.
+# If dates are important, please make sure that import is successful.
+# Dates often get converted automatically by excel and by R!!!
+
+# dates <- as.POSIXct(dates, tz = "UTC", format = "%d/%m/%y")
+
+manifest$sampleID <- sampleID
+manifest$projectName <- rep(projectName, N)
+manifest$cohortName <- rep(cohortName, N)
+
+# creating date for today (comment after use)
+today <- format(Sys.time(), "%d-%m-%Y")
+manifest$receptionDate <- rep(today, N)
+
+# sampleMatrixTypes are predefined. Use getMatrices() to obtain a list of
+# valid types. Most common are PLA, SER and URI
+manifest$sampleMatrixType <- manifest$sampleMatrix
+
+# sample volume must be in microliter without unit (eg. 500)
+manifest$sampleVolume <- manifest$sampleVolume
+
+# tubeLabel MUST correspond to the labels actually on the tube so that 
+# locating samples is possible
+manifest$tubeLabel <- cleanNames(manifest$tubeLabel)
+
+# sourceID corresponds to the patientID or the source in a multi time point
+# experimental design.
+# IN ORDER TO UNIQUELY MATCH A SAMPLE TO ITS METADATA THE CONCATENATION OF
+# SOURCEID - SAMPLETIMEPOINT - SAMPLEALIQUOTS MUST BE UNIQUE.
+manifest$sourceID <- cleanNames(manifest$sourceName)
+manifest$sampleTimePoint <- cleanNames(manifest$sampleTimePoint)
+manifest$sampleAliquots <- manifest$sampleAliquots
+
+# Provide information about the boxes
+# Please use:
+# 9x9
+# 10x10
+# 9x9 (Lettered)
+# 10x10 (Lettered) 
+# as boxTypes.
+manifest$boxName <- rep("box1", N) #rep(NA, N)
+manifest$boxType <- rep("10x10", N) #rep(NA, N)
+
+# the position MUST be lettered. If boxes uses numeric position, then the 
+# position must be converted.
+manifest$tubePosition <- rep(NA, N) #manifest$tubePosition
+manifest$tubeRow <- rep(NA, N) #posToRC(manifest$tubePosition)$row
+manifest$tubeCol <- rep(NA, N) #posToRC(manifest$tubePosition)$col
+
+# additional information
+manifest$collectionTube <- manifest$collectionTubeType
+manifest$comments <- manifest$comment
+
+# DON'T ALTER THIS LINE (COMPATIBILITY WITH OLDER FORMATS)
+manifest$UUID <- paste0(manifest$sampleID, "_", manifest$sourceID)
+```
+
+# check for duplicated
+```{r}
+uniquetxt <- paste0(manifest$sourceName, 
+                    manifest$sampleTimePoint, 
+                    manifest$sampleAliquots,
+                    manifest$sampleMatrixType,
+                    collapse = "-")
+fi <- duplicated(uniquetxt)
+table(fi)
+setorder(manifest, cols = "tubeLabel")
+manifest[dduplicated(uniquetxt),,]
+```
+
+#we label dups as dups (should only be used in exceptional cases)
+```{r}
+# manifest$tubeLabel <- makeUnique(manifest$tubeLabel, first = 2)
+# uniquetxt <- paste0(manifest$sourceID, manifest$sampleTimePoint, manifest$sampleAliquots)
+# fi <- duplicated(uniquetxt)
+# manifest$sampleAliquots[fi] <- paste0(manifest$sampleAliquots[fi], ".d")
+```
+
+
+# add complementary information into the comment column 
+```{r}
+# # use this for external projects only
+# for (i in 1:nrow(manifest)) {
+#   manifest$comments[i] <- toJSON(manifestOriginal[i,], unbox = TRUE)
+# }
+```
+
+# creation of the sample description list
+```{r}
+manifest %>% select(sampleID,
+                    projectName,
+                    cohortName,
+                    receptionDate,
+                    sampleMatrixType,
+                    sampleVolume,
+                    tubeLabel,
+                    sourceID,
+                    sampleTimePoint,
+                    sampleAliquots,
+                    boxName,
+                    boxType,
+                    tubePosition,
+                    tubeRow,
+                    tubeCol,
+                    collectionTube,
+                    comments,
+                    UUID) -> sampleDescriptionList
+```
+
+# checking a few things
+```{r}
+checkSamples(sampleDescriptionList)
+```
+
+# storing the list in the repo (legacy)
+```{r}
+# we still write a sample description list file for legacy purpose
+# we add ignore so it is not imported
+# DON'T ALTER THE NAME OF THE FILE
+txt = "" # if you really need to identify multiple lists, please use this.
+
+write.table(sampleDescriptionList, 
+            file = paste0("sampleDescriptionList", cleanNames(txt), ".ignore.tsv"), sep = "\t", dec = ".", row.names = FALSE)
+```
+
+# inserting into the db
+```{r}
+# uncomment this line to insert the samples into rolodex. 
+# BEFORE DOING SO, MAKE SURE YOU HAVE PULLED THE ROLODEX-SAMPLES REPO!!!
+# DON'T FORGET TO COMMIT AND PUSH ONCE INSERTED!!!
+# insertSamples(sampleDescriptionList)
+
+# and disconnecting DB
+dbDisconnect(con)
+```
