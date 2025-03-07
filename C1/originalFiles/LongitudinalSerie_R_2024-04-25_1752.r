@@ -5,7 +5,7 @@ graphics.off()
 library(Hmisc)
 library(data.table)
 #Read Data
-data=read.csv('originalFiles/LongitudinalSerie_DATA_2024-04-25_1752.csv')
+data=read.csv('~/git/phenocare/fibers/C1/originalFiles/LongitudinalSerie_DATA_2024-04-25_1752.csv')
 #Setting Labels
 
 label(data$record_id)="Record ID"
@@ -201,6 +201,170 @@ tableOf <- data.table(do.call("rbind", listOf))
 sel <- c("type", "uuid")
 tableOf <- tableOf[,..sel]
 
+### There are lot of typos and missing data table(redcap)
+SDL<-read.csv("~/git/phenocare/fibers/C1/sampleDescriptionAll.csv")
+SDL<-SDL%>%select(sampleID:sampleMatrixType,tubeLabel:sampleTimePoint)%>%
+  mutate(key = gsub("-","_",gsub("FIB-","FIB",toupper(tubeLabel))))
+
+SDL_URI<-SDL%>%filter(sampleMatrixType=="URI")
+SDL_PLA<-SDL%>%filter(sampleMatrixType=="PLA")
+SDL_FAE<-SDL%>%filter(sampleMatrixType=="FAE")
+SDL_FAE$key<-gsub("_1","",SDL_FAE$key)
+SDL_FAE$key<-gsub("_2","",SDL_FAE$key)
+
+SDL_URI$key[-which(SDL_URI$key %in% data$urine_id)]
+SDL_PLA$key[-which(SDL_PLA$key %in% data$blood_id)]
+SDL_FAE$key[-which(SDL_FAE$key %in% data$feces_id)]
+
+## Fixing typo on urine_id, blood_id, feces_id
+# FIB123_U3_T8 and FIB123_B3_T8 (they bve duplicated T6 but in different time_hr....)
+idx<-which(data$urine_id=="FIB123_U3_T6" & data$time_hr=="8")
+data$urine_id[idx]<-"FIB123_U3_T8"
+data$blood_id[idx]<-"FIB123_B3_T8"
+rm(idx)
+# "FIB123_U4_" many of the tubeLabels are wrong 
+idx<-grep("FIB123_U4_",data$urine_id)
+data$urine_id[idx]<-paste0("FIB123_U4_T",data$time_hr[idx])
+data$blood_id[idx]<-paste0("FIB123_B4_T",data$time_hr[idx])
+
+
+# FIB202_UX_T8 is missign in the data # add them with H2bt levels of 5
+idx<-grep("FIB202_UX_T6",data$urine_id)
+sub<-data[idx,]
+sub$urine_id<-gsub("T6","T8",sub$urine_id)
+sub$time_hr<-8
+sub$h2bt_level<-5
+sub$time_hr.factor<-"T8"
+data<-rbind(data,sub)
+
+# FIB239 is actuall FIB329 change the SDL
+idx<-grep("FIB239",SDL$key)
+SDL$key[idx]<-"FIB329_U1_T2"
+rm(idx)
+
+# FIB426 U4 is actually U1 change the SDL
+## data has a wrong urine_id fix that first
+idx<-grep("FIB426_U1",data$urine_id)
+data$urine_id[idx]<-paste0("FIB426_U1_T",data$time_hr[idx])
+rm(idx)
+idx<-grep("FIB426_U4",SDL$key)
+SDL$key[idx]<-gsub("U4","U1",SDL$key[idx])
+rm(idx)
+
+# FIB427 U4 is actually FIB256 change the SDL
+idx<-grep("FIB247",SDL$key)
+SDL$key[idx]<-gsub("247","256",SDL$key[idx])
+rm(idx)
+
+# FIB621 U5 is actually U1 change the SDL
+idx<-grep("FIB621_U5",SDL$key)
+SDL$key[idx]<-gsub("FIB621_U5","FIB621_U1",SDL$key[idx])
+rm(idx)
+
+# FIB623 U3 is actually U1 change the SDL
+## FIB623_U1_T7 for blood is actually FIB623_U1_T6 (same for one of the duplicated B1_T7)
+idx<-grep("FIB623_U3",SDL$key)
+SDL$key[idx]<-gsub("FIB623_U3","FIB623_U1",SDL$key[idx])
+rm(idx)
+idx<-which(data$urine_id=="FIB623_U1_T7")
+data$urine_id[idx]<-"FIB623_U1_T6"
+data$blood_id[idx]<-"FIB623_B1_T6"
+rm(idx)
+
+# FIB256_B3_T2
+idx<-which(data$blood_id=="FIB256_B3_T3" & data$time_hr=="2")
+data$blood_id[idx]<-"FIB256_B3_T2"
+rm(idx)
+
+# FIB623_B1_T6
+idx<-which(data$blood_id=="FIB659_B1_T2" & data$time_hr=="1")
+data$blood_id[idx]<-"FIB659_B1_T1"
+rm(idx)
+
+# FIB112_FX_T0
+idx<-which(data$cv_date=="5/4/2024" & data$record_id=="FIB112" & data$time_hr=="0")
+data$feces_id[idx]<-"FIB112_FX_T0"
+rm(idx)
+
+#"FIB117_F1_T1"
+idx<-which(data$blood_id=="FIB117_B1_T1")
+data$feces_id[idx]<-"FIB117_F1_T1"
+rm(idx)
+#"FIB123_F1_T1" 
+idx<-which(data$blood_id=="FIB123_B1_T1")
+data$feces_id[idx]<-"FIB123_F1_T1"
+rm(idx)
+
+#"FIB150_F1_T1"
+idx<-which(data$blood_id=="FIB150_B1_T1")
+data$feces_id[idx]<-"FIB150_F1_T1"
+rm(idx)
+
+#"FIB202_F1_T1" 
+idx<-which(data$blood_id=="FIB202_B1_T1")
+data$feces_id[idx]<-"FIB202_F1_T1"
+rm(idx)
+
+#"FIB212_F1_T1" 
+idx<-which(data$blood_id=="FIB202_B1_T1")
+data$feces_id[idx]<-"FIB202_F1_T1"
+rm(idx)
+
+#"FIB220_F1_T1" 
+idx<-which(data$blood_id=="FIB220_B1_T1")
+data$feces_id[idx]<-"FIB220_F1_T1"
+rm(idx)
+
+#"FIB256_F1_T1"
+idx<-which(data$blood_id=="FIB256_B1_T1")
+data$feces_id[idx]<-"FIB256_F1_T1"
+rm(idx)
+
+#"FIB274_F1_T1"
+idx<-which(data$blood_id=="FIB274_B1_T1")
+data$feces_id[idx]<-"FIB274_F1_T1"
+rm(idx)
+
+#"FIB284_F1_T1" (2 aliquots??)
+idx<-which(data$blood_id=="FIB284_B1_T1")
+data$feces_id[idx]<-"FIB284_F1_T1"
+rm(idx)
+
+#"FIB297_F1_T1"
+idx<-which(data$blood_id=="FIB297_B1_T1")
+data$feces_id[idx]<-"FIB297_F1_T1"
+rm(idx)
+
+#"FIB329_F1_T1" 
+idx<-which(data$blood_id=="FIB329_B1_T1")
+data$feces_id[idx]<-"FIB329_F1_T1"
+rm(idx)
+
+#"FIB380_F1_T1" 
+idx<-which(data$blood_id=="FIB380_B1_T1")
+data$feces_id[idx]<-"FIB380_F1_T1"
+rm(idx)
+
+#"FIB420_F1_T1" 
+idx<-which(data$blood_id=="FIB420_B1_T1")
+data$feces_id[idx]<-"FIB420_F1_T1"
+rm(idx)
+
+#"FIB439_F1_T1"
+idx<-which(data$blood_id=="FIB439_B1_T1")
+data$feces_id[idx]<-"FIB439_F1_T1"
+rm(idx)
+
+#"FIB439_F3_T1" 
+idx<-which(data$blood_id=="FIB439_B3_T1")
+data$feces_id[idx]<-"FIB439_F3_T1"
+rm(idx)
+
+#"FIB455_F1_T1"
+idx<-which(data$blood_id=="FIB455_B1_T1")
+data$feces_id[idx]<-"FIB455_F1_T1"
+rm(idx)
+
 # we find rows with valid tubeLabels (one row can have multiple tubes)
 idx <- grepl("FIB", data$urine_id) | grepl("FIB", data$blood_id) | grepl("FIB", data$feces_id)
 
@@ -351,28 +515,35 @@ test<-tt%>%
 
 library(dplyr)
 
-setwd("~/git/phenocare/fibers/C1")
+SDL$tubeLabel<-tolower(gsub("_","-",SDL$key))
+SDL$tubeLabel<-substr(SDL$tubeLabel,1,12)
+SDL_red<-SDL[which(SDL$tubeLabel %in% test$tubeLabels),]
+test_red<-test[which(test$tubeLabels %in% SDL_red$tubeLabel),]
+test_red<-test_red[match(SDL_red$tubeLabel,test_red$tubeLabels),]
+SDL_red$sampleTimePoint<-paste0(substr(SDL_red$tubeLabel,11,12),"-",substr(SDL_red$tubeLabel,8,9))
 
-sdl_uri<-read.table("sampleDescriptionListUri.ignore.tsv",header = T)
-sid <- read.table("updateLayoutForm_FIBb01-27-06-2024.csv", header = TRUE, sep = ",")
-sid<-sid%>%select(sampleID,tubeLabel)%>%
-  mutate(projectName = "fibers",
-         cohortName = "C1",
-         sampleMatrixType = "PLA",
-         sourceID = sapply(strsplit(tubeLabel,"-"),"[",1),
-         sampleTimePoint = paste0(sapply(strsplit(tubeLabel,"-"),"[",3),"-",sapply(strsplit(tubeLabel,"-"),"[",2)))
-sdl_uri<-sdl_uri%>%select(sampleID:cohortName,sampleMatrixType,tubeLabel:sampleTimePoint)
-
-SDL<-rbind(sdl_uri,sid)
-rm(sdl_uri,sid)
-
-ANN<-cbind(SDL[match(test$tubeLabels,gsub("fib-","fib",SDL$tubeLabel)),],test%>%select(visit:Activity))
-
-ANN$sampleID<-makeUnique(ANN$sampleID,sep = "#")
-
+Ann<-cbind(SDL_red%>%select(-key),test_red%>%select(visit:Activity))
+# sdl_uri<-read.table("sampleDescriptionListUri.ignore.tsv",header = T)
+# sid <- read.table("updateLayoutForm_FIBb01-27-06-2024.csv", header = TRUE, sep = ",")
+# sid<-sid%>%select(sampleID,tubeLabel)%>%
+#   mutate(projectName = "fibers",
+#          cohortName = "C1",
+#          sampleMatrixType = "PLA",
+#          sourceID = sapply(strsplit(tubeLabel,"-"),"[",1),
+#          sampleTimePoint = paste0(sapply(strsplit(tubeLabel,"-"),"[",3),"-",sapply(strsplit(tubeLabel,"-"),"[",2)))
+# sdl_uri<-sdl_uri%>%select(sampleID:cohortName,sampleMatrixType,tubeLabel:sampleTimePoint)
+# 
+# SDL<-rbind(sdl_uri,sid)
+# rm(sdl_uri,sid)
+# 
+# ANN<-cbind(SDL[match(test$tubeLabels,gsub("fib-","fib",SDL$tubeLabel)),],test%>%select(visit:Activity))
+# 
+library(fusion)
+Ann$sampleID<-makeUnique(Ann$sampleID,sep = "#")
+# 
 da <- new("dataElement",
           .Data = NA_character_,
-          obsDescr = list(ANN),
+          obsDescr = list(Ann),
           varName = NA_character_,
           type = "ANN",
           method = NA_character_,
