@@ -63,14 +63,14 @@ setDT(manifest)
 
 ```{r}
 # if aliquots represent the number and not the label, we can expand the manifest to give each tube (aliquots) a proper uuid
-manifest <- manifest[rep(seq_len(.N), sampleAliquots)]
+# manifest <- manifest[rep(seq_len(.N), sampleAliquots)]
 
 # this create a column aliquots that becomes the new sampleAliquots
 # REMEMBER TO CHANGE THE CODE BELOW TO USE aliquots INSTEAD OF sampleAliquots
-manifest[, aliquots := sequence(sampleAliquots), by = .(tubeLabel, sampleAliquots)]
+# manifest[, aliquots := sequence(sampleAliquots), by = .(tubeLabel, sampleAliquots)]
 
-N <- nrow(manifest)
-print(N)
+# N <- nrow(manifest)
+# print(N)
 ```
 
 ```{r}
@@ -97,9 +97,10 @@ manifest$receptionDate <- rep(today, N)
 # sampleMatrixTypes are predefined. Use getMatrices() to obtain a list of
 # valid types. Most common are PLA, SER and URI
 manifest$sampleMatrixType <- manifest$sampleMatrix
+manifest$sampleMatrixType[manifest$sampleMatrixType == "URINE"] <- "URI"
 
 # sample volume must be in microliter without unit (eg. 500)
-manifest$sampleVolume <- manifest$sampleVolume
+manifest$sampleVolume <- rep(NA, N)
 
 # tubeLabel MUST correspond to the labels actually on the tube so that 
 # locating samples is possible
@@ -109,9 +110,9 @@ manifest$tubeLabel <- cleanNames(manifest$tubeLabel)
 # experimental design.
 # IN ORDER TO UNIQUELY MATCH A SAMPLE TO ITS METADATA THE CONCATENATION OF
 # SOURCEID - SAMPLETIMEPOINT - SAMPLEALIQUOTS MUST BE UNIQUE.
-manifest$sourceID <- cleanNames(manifest$sourceName)
+manifest$sourceID <- sapply(manifest$tubeLabel, function(x) strsplit(x, "-")[[1]][1])
 manifest$sampleTimePoint <- cleanNames(manifest$sampleTimePoint)
-manifest$sampleAliquots <- manifest$sampleAliquots
+manifest$sampleAliquots <- rep(1, N)
 
 # Provide information about the boxes
 # Please use:
@@ -120,18 +121,18 @@ manifest$sampleAliquots <- manifest$sampleAliquots
 # 9x9 (Lettered)
 # 10x10 (Lettered) 
 # as boxTypes.
-manifest$boxName <- rep("box1", N) #rep(NA, N)
-manifest$boxType <- rep("10x10", N) #rep(NA, N)
+manifest$boxName <- cleanNames(manifest$boxName) #rep(NA, N)
+manifest$boxType <- rep("10x10", N)
 
 # the position MUST be lettered. If boxes uses numeric position, then the 
 # position must be converted.
-manifest$tubePosition <- rep(NA, N) #manifest$tubePosition
-manifest$tubeRow <- rep(NA, N) #posToRC(manifest$tubePosition)$row
-manifest$tubeCol <- rep(NA, N) #posToRC(manifest$tubePosition)$col
+manifest$tubePosition <- numToPos(manifest$tubePosition, boxDim = c(10,10))
+manifest$tubeRow <- posToRC(manifest$tubePosition)$row
+manifest$tubeCol <- posToRC(manifest$tubePosition)$col
 
 # additional information
-manifest$collectionTube <- manifest$collectionTubeType
-manifest$comments <- manifest$comment
+manifest$collectionTube <- rep(NA,N)
+manifest$comments <- rep(NA,N)
 
 # DON'T ALTER THIS LINE (COMPATIBILITY WITH OLDER FORMATS)
 manifest$UUID <- paste0(manifest$sampleID, "_", manifest$sourceID)
