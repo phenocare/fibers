@@ -201,3 +201,123 @@ write.table(sampleDescriptionList,
 # and disconnecting DB
 dbDisconnect(con)
 ```
+
+# RLL forgot some samples (she added to the sampleDescList)
+```{r}
+tt <- read.table("originalFiles/sampleDescriptionListfae.ignore.tsv", header = TRUE, sep = "\t")
+tt <- tt[25:28,1:18]
+checkSamples(tt)
+tt$boxName <- cleanNames(tt$boxName)
+# insertSamples(tt)
+```
+
+NO NEED TO MODIFY THE FOLDERS AS NO RUN HAS BEEN DONE WITH THIS BATCH YET
+
+now we need to modify plates
+```{r}
+lastIdx <- dbGetQuery(con, "select idx from plates order by idx desc limit 1")
+idx <- seq_len(4) + as.numeric(lastIdx)
+
+pos <- c("C4", "C5", "C6", "C7")
+```
+
+FIB01142|H5|FIBp024|fibers|C1|URI|48977|FIBp024
+```{r}
+projectName <- "fibers"
+cohortName <- "C1"
+sampleMatrixType <- "FAE"
+plateID <- "FIBp045"
+qry <- paste0("insert into plates ('sampleID', 
+              'wellPos', 
+              'plateID', 
+              'projectName', 
+              'cohortName', 
+              'sampleMatrixType', 
+              'idx',
+              'plateOriginal') values
+              ('", tt$sampleID[1], "',
+              '", pos[1], "',
+              '", plateID, "',
+              '", projectName,"',
+              '", cohortName,"',
+              '", sampleMatrixType,"',
+              '", idx[1],"',
+              '", plateID,"')")
+# dbExecute(con, qry)
+
+qry <- paste0("insert into plates ('sampleID', 
+              'wellPos', 
+              'plateID', 
+              'projectName', 
+              'cohortName', 
+              'sampleMatrixType', 
+              'idx',
+              'plateOriginal') values
+              ('", tt$sampleID[2], "',
+              '", pos[2], "',
+              '", plateID, "',
+              '", projectName,"',
+              '", cohortName,"',
+              '", sampleMatrixType,"',
+              '", idx[2],"',
+              '", plateID,"')")
+# dbExecute(con, qry)
+
+qry <- paste0("insert into plates ('sampleID', 
+              'wellPos', 
+              'plateID', 
+              'projectName', 
+              'cohortName', 
+              'sampleMatrixType', 
+              'idx',
+              'plateOriginal') values
+              ('", tt$sampleID[3], "',
+              '", pos[3], "',
+              '", plateID, "',
+              '", projectName,"',
+              '", cohortName,"',
+              '", sampleMatrixType,"',
+              '", idx[3],"',
+              '", plateID,"')")
+# dbExecute(con, qry)
+
+qry <- paste0("insert into plates ('sampleID', 
+              'wellPos', 
+              'plateID', 
+              'projectName', 
+              'cohortName', 
+              'sampleMatrixType', 
+              'idx',
+              'plateOriginal') values
+              ('", tt$sampleID[4], "',
+              '", pos[4], "',
+              '", plateID, "',
+              '", projectName,"',
+              '", cohortName,"',
+              '", sampleMatrixType,"',
+              '", idx[4],"',
+              '", plateID,"')")
+# dbExecute(con, qry)
+```
+
+```{r}
+dbGetQuery(con, "select * from samples where tubeLabel = 'fib329-f1-t1-1'")
+dbExecute(con, "update samples set tubeLabel = 'fib329-f1-t0-1' where tubeLabel = 'fib329-f1-t1-1';")
+dbExecute(con, "update samples set sampleTimePoint = 't0f1' where tubeLabel = 'fib329-f1-t0-1';")
+dbGetQuery(con, "select * from samples where tubeLabel = 'fib329-f1-t0-1'")
+
+
+dbGetQuery(con, "select * from samples where tubeLabel = 'fib439-f1-t1-1'")
+dbExecute(con, "update samples set tubeLabel = 'fib439-f1-t0-1' where tubeLabel = 'fib439-f1-t1-1';")
+dbExecute(con, "update samples set sampleTimePoint = 't1f1' where tubeLabel = 'fib439-f1-t0-1';")
+dbGetQuery(con, "select * from samples where tubeLabel = 'fib439-f1-t0-1'")
+
+
+dbGetQuery(con, "select * from samples where tubeLabel = 'fib439-f3-t1-1'")
+dbExecute(con, "update samples set tubeLabel = 'fib439-f3-t0-1' where tubeLabel = 'fib439-f3-t1-1';")
+dbExecute(con, "update samples set sampleTimePoint = 't0f3' where tubeLabel = 'fib439-f3-t0-1';")
+dbGetQuery(con, "select * from samples where tubeLabel = 'fib439-f3-t0-1'")
+```
+
+
+
