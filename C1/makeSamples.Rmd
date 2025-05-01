@@ -216,6 +216,23 @@ t <- read.table("RC_dump_PLA.csv", header = TRUE, sep = ",")
 t <- t[!is.na(t$type),]
 t <- t[!is.na(t$bloodId),]
 t <- t[t$type == "Elephant Garlic" | t$type == "Yacon" | t$type == "Jerusalem Artichoke",]
+t <- t[t$recordId %in% c("FIB112", "FIB150", "FIB193", "FIB202", 
+                         "FIB207", "FIB212", "FIB220", "FIB274"),]
+
+selectedIds <- t$sampleID
+
+# we create a query to create a batch using option 3
+dbGetQuery(con, paste0("select * from samples where projectName = 'fibers' and sampleMatrixType = 'PLA' and sampleID in ('", paste0(selectedIds, collapse = "','"), "')"))
+qry <- paste0("select * from samples where projectName = 'fibers' and sampleMatrixType = 'PLA' and sampleID in ('", paste0(selectedIds, collapse = "','"), "')")
+
+```
+
+# here we prepare batch 7 for remaining samples
+```{r}
+t <- read.table("RC_dump_PLA.csv", header = TRUE, sep = ",")
+t <- t[!is.na(t$type),]
+t <- t[!is.na(t$bloodId),]
+t <- t[t$type == "Elephant Garlic" | t$type == "Yacon" | t$type == "Jerusalem Artichoke",]
 t <- t[!(t$recordId %in% c("FIB112", "FIB150", "FIB193", "FIB202", 
                          "FIB207", "FIB212", "FIB220", "FIB274")),]
 
@@ -226,4 +243,3 @@ dbGetQuery(con, paste0("select * from samples where projectName = 'fibers' and s
 qry <- paste0("select * from samples where projectName = 'fibers' and sampleMatrixType = 'PLA' and sampleID in ('", paste0(selectedIds, collapse = "','"), "')")
 
 ```
-
