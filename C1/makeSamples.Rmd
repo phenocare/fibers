@@ -215,9 +215,9 @@ dbGetQuery(con, "select sampleAliquots, comments from samples where projectName 
 t <- read.table("RC_dump_PLA.csv", header = TRUE, sep = ",")
 t <- t[!is.na(t$type),]
 t <- t[!is.na(t$bloodId),]
-t <- t[t$type == "Elephant Garlic" | t$type == "Yacon",]
-t <- t[t$recordId %in% c("FIB112", "FIB150", "FIB193", "FIB202", 
-                         "FIB207", "FIB212", "FIB220", "FIB274"),]
+t <- t[t$type == "Elephant Garlic" | t$type == "Yacon" | t$type == "Jerusalem Artichoke",]
+t <- t[!(t$recordId %in% c("FIB112", "FIB150", "FIB193", "FIB202", 
+                         "FIB207", "FIB212", "FIB220", "FIB274")),]
 
 selectedIds <- t$sampleID
 
