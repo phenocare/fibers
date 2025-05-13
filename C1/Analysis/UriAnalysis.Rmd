@@ -1,0 +1,341 @@
+---
+title: "Fiber Urine - NMR analysis"
+author: "RM"
+date: "May 13th Tue 2025"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3
+    number_sections: true
+    theme: lumen
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(knitr)
+library(htmlTable)
+library(dplyr)
+library(readxl)
+library(data.table)
+library(fusion)
+library(nmr.spectra.processing)
+library(mva.plots)
+library(ggplot2)
+
+```
+
+```{r}
+
+an<-local(get(load("~/OneDrive - Murdoch University/datasets/fibers/C1/dataElements/fibers_C1_ANN.daE")))
+
+an<-an@obsDescr[[1]]
+da <- local(get(load("~/Downloads/fibers_C1_URI_FIBr02_noesygppr1d@PROF_URINE_NOESY.daE")))
+
+spec<-da@.Data
+ppm<-as.numeric(da@varName)
+spec_an<-da@obsDescr[[1]]
+colnames(spec)<-ppm
+rownames(spec)<-spec_an$sampleID
+
+```
+
+
+*assume the LTR checks are done*
+
+```{r}
+spec<-spec[which(spec_an$sampleType=="sample"),]
+spec_an<-spec_an[which(spec_an$sampleType=="sample"),]
+length(which(an$sampleID %in% spec_an$sampleID))
+cat("\n", "we have", length(which(an$sampleID %in% spec_an$sampleID)), " samples in common\n",
+    "and ", length(which(!spec_an$sampleID %in% an$sampleID)), " samples in the experimental data that are not in metadata \n")
+spec<-spec[which(spec_an$sampleID %in% an$sampleID),]
+spec_an<-spec_an[which(spec_an$sampleID %in% an$sampleID),]
+an<-an[match(spec_an$sampleID,an$sampleID),]
+
+```
+
+### NMR spectra post processing
+
+### Step 1 Spectra calibration
+
+Lets check the alanine doublets as it is
+
+```{r}
+matspec(spec,ppm,roi = c(1.465,1.52),interactive = F)
+```
+
+
+```{r}
+X_cal<-calibrateSpectra(ppm,spec,ref = c("alanine"),cshift = 1.48,maxShift = 1.5,rOref = c(1.47,1.51))
+colnames(X_cal)<-ppm
+```
+
+Lets see after calibration
+
+```{r}
+matspec(X_cal,ppm,roi = c(1.465,1.52),interactive = F)
+
+```
+
+### Step 2 Remove the regions of the spectra that are not of interest
+
+```{r}
+idx<-c(which(ppm<=0.5),which(ppm>=4.7 & ppm<=5.0),which(ppm>=9.5))
+
+X<-X_cal[,-idx]
+ppm<-ppm[-idx]
+
+rm(idx,X_cal)
+```
+
+### Step 3 Baseline correction
+```{r}
+X<-baselineCorrection(X)
+
+matspec(X,ppm,roi = c(1.465,1.52),interactive = F)
+
+```
+
+### Step 4 Normalization
+```{r}
+X_pqn<-normalize(X)
+colnames(X_pqn)<-ppm
+
+matspec(X_pqn,ppm,roi = c(1.465,1.52),interactive = F)
+
+```
+
+
+```{r}
+# da<-local(get(load("~/Downloads/fibers_C1_URI_FIBr02_brxsm.daE")))
+# sm<-data.frame(apply(da@.Data,2,as.numeric))
+# sm_an<-da@obsDescr[[1]]
+```
+
+
+```{r}
+# table(an$type)
+#              Apple  Baseline diet only     Elephant Garlic 
+#                  53                  25                  50 
+#     Globe Artichoke Jerusalem Artichoke              Orange 
+#                  50                  44                  47 
+#              Tomato          Watermelon               Yacon 
+#                  45                  50                  49 
+```
+
+
+# Analysis
+
+## PCA
+
+```{r}
+mod<-PCA(X_pqn)
+
+plotScores(
+  mod,
+  optns = list(
+    color = an$type,
+    shape = an$timePoint,
+    discretePalette = c(
+      "Apple" = "#FF0000",
+      "Baseline diet only" = "#00FF00",
+      "Elephant Garlic" = "#0000FF",
+      "Globe Artichoke" = "#FFFF00",
+      "Jerusalem Artichoke" = "#FF00FF",
+      "Orange" = "#00FFFF",
+      "Tomato" = "#FFA500",
+      "Watermelon" = "#800080",
+      "Yacon" = "#008080"
+    ),
+    extra = scale_shape_manual(values = seq(1, length(
+      unique(an$timePoint)
+    ), 1))
+  )
+)
+
+cat("\n", "who are those PC3 outliers and why?","\n")
+
+outlier_idx<-which(mod$data$scores[,3]<=-80)
+an[outlier_idx,]
+
+cat("\n", "PC3 outliers are from the same person:",unique(an$sourceID[outlier_idx]), "eating ", unique(an$type[outlier_idx]), "collected from",length(outlier_idx),"different timepoints","\n")
+
+PlotLoadSpec(mod,PC = 3)
+
+cat("\n", "From the loadings, it seems that those outliers are from high glucose in urine","\n")
+
+
+cat("\n", "Since this participant only participated in the Elephant Garlic study it may be wise to remove from the analysis","\n")
+
+# matspec(X_pqn[which(an$sourceID=="fib380"),],ppm,roi = c(3.5,4.0),interactive = F)
+
+```
+
+
+```{r}
+mod1<-PCA(X_pqn[-which(an$sourceID=="fib380"),])
+
+plotScores(
+  mod1,
+  optns = list(
+    color = an$type[-which(an$sourceID=="fib380")],
+    shape = an$timePoint[-which(an$sourceID=="fib380")],
+    discretePalette = c(
+      "Apple" = "#FF0000",
+      "Baseline diet only" = "#00FF00",
+      "Elephant Garlic" = "#0000FF",
+      "Globe Artichoke" = "#FFFF00",
+      "Jerusalem Artichoke" = "#FF00FF",
+      "Orange" = "#00FFFF",
+      "Tomato" = "#FFA500",
+      "Watermelon" = "#800080",
+      "Yacon" = "#008080"
+    ),
+    extra = scale_shape_manual(values = seq(1, length(
+      unique(an$timePoint)
+    ), 1))
+  )
+)
+```
+
+
+
+```{r,results='asis'}
+roi_list<-list(c(0.5,1.0),c(1.0,1.5),
+               c(1.5,2.0),c(2.0,2.5),
+               c(2.5,3.0),c(3.0,3.5),
+               c(3.5,4.0),c(4.0,4.5),
+               c(4.5,5.0),c(5.0,5.5),
+               c(5.5,6.0),c(6.0,6.5),
+               c(6.5,7.0),c(7.0,7.5),
+               c(7.5,8.0),c(8.0,8.5),
+               c(8.5,9.0),c(9.0,9.5)
+               )
+```
+
+
+## COMPASS
+```{r,results='asis',fig.width=6,fig.height=8}
+
+library(gridExtra)
+for(i in roi_list){
+  model<-PCA(X_pqn[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8")),which(ppm>=i[1] & ppm<=i[2])],rank = 2)
+  
+  plotScores(
+    model,
+    optns = list(
+      color = an$type[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))],
+      shape = an$timePoint[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))],
+      discretePalette = c(
+        "Apple" = "#FF0000",
+        "Baseline diet only" = "#00FF00",
+        "Elephant Garlic" = "#0000FF",
+        "Globe Artichoke" = "#FFFF00",
+        "Jerusalem Artichoke" = "#FF00FF",
+        "Orange" = "#00FFFF",
+        "Tomato" = "#FFA500",
+        "Watermelon" = "#800080",
+        "Yacon" = "#008080"
+      ),
+      extra = scale_shape_manual(values = seq(1, length(
+        unique(an$timePoint)
+      ), 1))
+    )
+  )
+  PlotLoadSpec(model,PC = 1)->p1
+  PlotLoadSpec(model,PC = 2)->p2
+  
+  grid.arrange(p1,p2,nrow=2)
+
+  
+}
+```
+
+
+
+
+## Visual Inspection using specOverlay
+
+soutceID fib 380 (high glucose outlier) were omitted and only ploted at Timepoint T2, T4, T6, and T8
+
+```{r,results='asis',fig.width=10,fig.height=10}
+for (i in roi_list) {
+  specOverlay(X_pqn[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8")),],
+              ppm,
+              roi = c(i[1], i[2]),
+              optns = list(facet = an$type[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))],
+                           color = an$timePoint[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))]))->p1
+  
+  plot(p1)
+
+}
+
+```
+
+### 2,3-butanediol 1.125 ~ 1.150 --> Yacon
+```{r,results='asis',fig.width=6,fig.height=10}
+specOverlay(X_pqn[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8")),],
+              ppm,
+              roi = c(1.125,1.150),
+              optns = list(facet = an$type[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))],
+                           color = an$timePoint[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))]))
+```
+
+
+### lactate 1.3 ~ 1.5 --> Apple at T2
+```{r,results='asis',fig.width=6,fig.height=10}
+
+specOverlay(X_pqn[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8")),],
+              ppm,
+              roi = c(1.31,1.34),
+              optns = list(facet = an$type[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))],
+                           color = an$timePoint[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))]))
+```
+
+
+### s 1.92 --> Global Artichoke at T2? --> only two samples
+```{r,results='asis',fig.width=6,fig.height=10}
+
+specOverlay(X_pqn[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8")),],
+              ppm,
+              roi = c(1.91,1.93),
+              optns = list(facet = an$type[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))],
+                           color = an$timePoint[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))]))
+```
+
+
+### s 2.045 --> Elephant Garlic peak at T4
+```{r,results='asis',fig.width=6,fig.height=10}
+
+specOverlay(X_pqn[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8")),],
+              ppm,
+              roi = c(2.0,2.1),
+              optns = list(facet = an$type[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))],
+                           color = an$timePoint[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))]))
+```
+
+### s 3.1 --> Orange 
+```{r,results='asis',fig.width=6,fig.height=10}
+
+specOverlay(X_pqn[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8")),],
+              ppm,
+              roi = c(3.09,3.12),
+              optns = list(facet = an$type[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))],
+                           color = an$timePoint[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))]))
+```
+
+### s 3.3 --> Orange 
+```{r,results='asis',fig.width=6,fig.height=10}
+
+specOverlay(X_pqn[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8")),],
+              ppm,
+              roi = c(3.29,3.31),
+              optns = list(facet = an$type[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))],
+                           color = an$timePoint[which(an$sourceID!="fib380"&an$timePoint %in% c("T2","T4","T6","T8"))]))
+```
+
+
